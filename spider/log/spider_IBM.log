@@ -1,0 +1,286 @@
+2016-12-28 14:50:20 [IBM] INFO: 2016-12-28 14:50:20 [IBMGuardium] INFO: Reading start URLs from redis key 'ibmguardium:urls' (batch size: 16)
+2016-12-28 14:50:20 [IBM] INFO: 2016-12-28 14:50:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-28 14:50:20 [IBM] INFO: 2016-12-28 14:50:20 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-12-28 14:50:25 [IBM] INFO: 2016-12-28 14:50:25 [IBMGuardium] DEBUG: Read 1 requests from 'ibmguardium:urls'
+2016-12-28 14:50:25 [IBM] INFO: 2016-12-28 14:50:25 [py.warnings] WARNING: /Library/Python/2.7/site-packages/service_identity/pyopenssl.py:97: SubjectAltNameWarning: Certificate has no `subjectAltName`, falling back to check for a `commonName` for now.  This feature is being removed by major browsers and deprecated by RFC 2818.
+2016-12-28 14:50:25 [IBM] INFO:   SubjectAltNameWarning
+2016-12-28 14:50:25 [IBM] INFO: 2016-12-28 14:50:25 [scrapy.core.downloader.tls] WARNING: Ignoring error while verifying certificate from host "172.16.10.6" (exception: ValueError('Invalid DNS-ID.',))
+2016-12-28 14:50:25 [IBM] INFO: 登陆IBM Guardium
+2016-12-28 14:50:26 [IBM] INFO: 2016-12-28 14:50:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://172.16.10.6:8443/sqlguard> from <POST https://172.16.10.6:8443/sqlguard>
+2016-12-28 14:50:27 [IBM] INFO: 获取数据库状态iframe对应请求的url
+2016-12-28 14:50:27 [IBM] INFO: 获取数据库状态
+2016-12-28 14:50:28 [IBM] INFO: DB:172.16.0.214信息已存入数据库
+2016-12-28 14:50:29 [IBM] INFO: DB:172.16.0.217信息已存入数据库
+2016-12-28 14:50:30 [IBM] INFO: DB:172.16.0.215信息已存入数据库
+2016-12-28 14:50:33 [IBM] INFO: DB:172.16.1.35信息已存入数据库
+2016-12-28 14:55:55 [IBM] INFO: 2016-12-28 14:55:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-28 14:55:55 [IBM] INFO: 2016-12-28 14:55:55 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-12-28 14:58:38 [IBM] INFO: 2016-12-28 14:58:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-28 14:58:38 [IBM] INFO: 2016-12-28 14:58:38 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-12-29 16:09:01 [IBM] INFO: 2016-12-29 16:09:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-29 16:09:01 [IBM] INFO: 2016-12-29 16:09:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-12-30 15:36:09 [IBM] INFO: 2016-12-30 15:36:09 [IBMGuardium] INFO: Reading start URLs from redis key 'ibmguardium:urls' (batch size: 16)
+2016-12-30 15:36:09 [IBM] INFO: 2016-12-30 15:36:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:36:09 [IBM] INFO: 2016-12-30 15:36:09 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-12-30 15:36:54 [IBM] INFO: 2016-12-30 15:36:54 [IBMGuardium] DEBUG: Read 1 requests from 'ibmguardium:urls'
+2016-12-30 15:37:09 [IBM] INFO: 2016-12-30 15:37:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:38:09 [IBM] INFO: 2016-12-30 15:38:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:38:09 [IBM] INFO: 2016-12-30 15:38:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://102.2.82.123:8443/robots.txt> (failed 1 times): TCP connection timed out: 60: Operation timed out.
+2016-12-30 15:39:09 [IBM] INFO: 2016-12-30 15:39:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:39:24 [IBM] INFO: 2016-12-30 15:39:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://102.2.82.123:8443/robots.txt> (failed 2 times): TCP connection timed out: 60: Operation timed out.
+2016-12-30 15:39:28 [IBM] INFO: 2016-12-30 15:39:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://102.2.82.123:8443/robots.txt> (failed 3 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+2016-12-30 15:39:28 [IBM] INFO: ].
+2016-12-30 15:41:21 [IBM] INFO: 2016-12-30 15:41:21 [IBMGuardium] INFO: Reading start URLs from redis key 'ibmguardium:urls' (batch size: 16)
+2016-12-30 15:41:21 [IBM] INFO: 2016-12-30 15:41:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:41:21 [IBM] INFO: 2016-12-30 15:41:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-12-30 15:41:41 [IBM] INFO: 2016-12-30 15:41:41 [IBMGuardium] DEBUG: Read 1 requests from 'ibmguardium:urls'
+2016-12-30 15:41:41 [IBM] INFO: 2016-12-30 15:41:41 [py.warnings] WARNING: /Library/Python/2.7/site-packages/service_identity/pyopenssl.py:97: SubjectAltNameWarning: Certificate has no `subjectAltName`, falling back to check for a `commonName` for now.  This feature is being removed by major browsers and deprecated by RFC 2818.
+2016-12-30 15:41:41 [IBM] INFO:   SubjectAltNameWarning
+2016-12-30 15:41:41 [IBM] INFO: 2016-12-30 15:41:41 [scrapy.core.downloader.tls] WARNING: Ignoring error while verifying certificate from host "172.16.10.6" (exception: ValueError('Invalid DNS-ID.',))
+2016-12-30 15:41:41 [IBM] INFO: 登陆IBM Guardium
+2016-12-30 15:41:41 [IBM] INFO: 获取登录用户名与密码
+2016-12-30 15:42:21 [IBM] INFO: 2016-12-30 15:42:21 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:43:21 [IBM] INFO: 2016-12-30 15:43:21 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:44:21 [IBM] INFO: 2016-12-30 15:44:21 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:45:21 [IBM] INFO: 2016-12-30 15:45:21 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:46:06 [IBM] INFO: 2016-12-30 15:46:06 [IBMGuardium] DEBUG: Read 1 requests from 'ibmguardium:urls'
+2016-12-30 15:46:06 [IBM] INFO: 2016-12-30 15:46:06 [scrapy.core.downloader.tls] WARNING: Ignoring error while verifying certificate from host "172.16.10.6" (exception: ValueError('Invalid DNS-ID.',))
+2016-12-30 15:46:06 [IBM] INFO: 登陆IBM Guardium
+2016-12-30 15:46:06 [IBM] INFO: 获取登录用户名与密码
+2016-12-30 15:46:21 [IBM] INFO: 2016-12-30 15:46:21 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:47:21 [IBM] INFO: 2016-12-30 15:47:21 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:48:21 [IBM] INFO: 2016-12-30 15:48:21 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:49:06 [IBM] INFO: 2016-12-30 15:49:06 [IBMGuardium] DEBUG: Read 1 requests from 'ibmguardium:urls'
+2016-12-30 15:49:06 [IBM] INFO: 2016-12-30 15:49:06 [scrapy.core.downloader.tls] WARNING: Ignoring error while verifying certificate from host "172.16.10.6" (exception: ValueError('Invalid DNS-ID.',))
+2016-12-30 15:49:06 [IBM] INFO: 登陆IBM Guardium
+2016-12-30 15:49:06 [IBM] INFO: 获取登录用户名与密码
+2016-12-30 15:49:21 [IBM] INFO: 2016-12-30 15:49:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:50:21 [IBM] INFO: 2016-12-30 15:50:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:51:21 [IBM] INFO: 2016-12-30 15:51:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:52:21 [IBM] INFO: 2016-12-30 15:52:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:53:21 [IBM] INFO: 2016-12-30 15:53:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:54:21 [IBM] INFO: 2016-12-30 15:54:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:55:21 [IBM] INFO: 2016-12-30 15:55:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:56:21 [IBM] INFO: 2016-12-30 15:56:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:57:21 [IBM] INFO: 2016-12-30 15:57:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:58:21 [IBM] INFO: 2016-12-30 15:58:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 15:59:21 [IBM] INFO: 2016-12-30 15:59:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:00:21 [IBM] INFO: 2016-12-30 16:00:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:01:21 [IBM] INFO: 2016-12-30 16:01:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:28:16 [IBM] INFO: 2016-12-30 16:28:16 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:28:21 [IBM] INFO: 2016-12-30 16:28:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:29:21 [IBM] INFO: 2016-12-30 16:29:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:30:21 [IBM] INFO: 2016-12-30 16:30:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:31:21 [IBM] INFO: 2016-12-30 16:31:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:32:21 [IBM] INFO: 2016-12-30 16:32:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:33:21 [IBM] INFO: 2016-12-30 16:33:21 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:33:41 [IBM] INFO: 2016-12-30 16:33:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2016-12-30 16:33:41 [IBM] INFO: {'downloader/request_bytes': 1201,
+2016-12-30 16:33:41 [IBM] INFO:  'downloader/request_count': 4,
+2016-12-30 16:33:41 [IBM] INFO:  'downloader/request_method_count/GET': 4,
+2016-12-30 16:33:41 [IBM] INFO:  'downloader/response_bytes': 10838,
+2016-12-30 16:33:41 [IBM] INFO:  'downloader/response_count': 4,
+2016-12-30 16:33:41 [IBM] INFO:  'downloader/response_status_count/200': 3,
+2016-12-30 16:33:41 [IBM] INFO:  'downloader/response_status_count/404': 1,
+2016-12-30 16:33:41 [IBM] INFO:  'finish_reason': 'shutdown',
+2016-12-30 16:33:41 [IBM] INFO:  'finish_time': datetime.datetime(2016, 12, 30, 8, 33, 41, 138625),
+2016-12-30 16:33:41 [IBM] INFO:  'log_count/DEBUG': 4,
+2016-12-30 16:33:41 [IBM] INFO:  'log_count/INFO': 29,
+2016-12-30 16:33:41 [IBM] INFO:  'log_count/WARNING': 4,
+2016-12-30 16:33:41 [IBM] INFO:  'response_received_count': 4,
+2016-12-30 16:33:41 [IBM] INFO:  'scheduler/dequeued/redis': 3,
+2016-12-30 16:33:41 [IBM] INFO:  'scheduler/enqueued/redis': 3,
+2016-12-30 16:33:41 [IBM] INFO:  'spider_exceptions/AttributeError': 3,
+2016-12-30 16:33:41 [IBM] INFO:  'start_time': datetime.datetime(2016, 12, 30, 7, 41, 21, 487863)}
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [IBMGuardium] INFO: Reading start URLs from redis key 'ibmguardium:urls' (batch size: 16)
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [IBMGuardium] DEBUG: Read 1 requests from 'ibmguardium:urls'
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [py.warnings] WARNING: /Library/Python/2.7/site-packages/service_identity/pyopenssl.py:97: SubjectAltNameWarning: Certificate has no `subjectAltName`, falling back to check for a `commonName` for now.  This feature is being removed by major browsers and deprecated by RFC 2818.
+2016-12-30 16:35:50 [IBM] INFO:   SubjectAltNameWarning
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [scrapy.core.downloader.tls] WARNING: Ignoring error while verifying certificate from host "172.16.10.6" (exception: ValueError('Invalid DNS-ID.',))
+2016-12-30 16:35:50 [IBM] INFO: 登陆IBM Guardium
+2016-12-30 16:35:50 [IBM] INFO: 获取登录用户名与密码
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [stdout] INFO: admin
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [stdout] INFO: <type 'str'>
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [stdout] INFO: 2wsx#EDC
+2016-12-30 16:35:50 [IBM] INFO: 2016-12-30 16:35:50 [stdout] INFO: <type 'str'>
+2016-12-30 16:35:51 [IBM] INFO: 2016-12-30 16:35:51 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://172.16.10.6:8443/sqlguard> from <POST https://172.16.10.6:8443/sqlguard>
+2016-12-30 16:35:52 [IBM] INFO: 获取数据库状态iframe对应请求的url
+2016-12-30 16:35:52 [IBM] INFO: 获取数据库状态
+2016-12-30 16:35:54 [IBM] INFO: DB:172.16.0.214信息已存入数据库
+2016-12-30 16:35:56 [IBM] INFO: DB:172.16.0.217信息已存入数据库
+2016-12-30 16:35:57 [IBM] INFO: DB:172.16.0.215信息已存入数据库
+2016-12-30 16:36:00 [IBM] INFO: DB:172.16.1.35信息已存入数据库
+2017-01-17 13:03:44 [IBM] INFO: 2017-01-17 13:03:44 [twisted] CRITICAL: Unhandled error in Deferred:
+2017-01-17 13:03:44 [IBM] INFO: 2017-01-17 13:03:44 [twisted] CRITICAL:
+2017-01-17 13:03:44 [IBM] INFO: Traceback (most recent call last):
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/twisted/internet/defer.py", line 1299, in _inlineCallbacks
+2017-01-17 13:03:44 [IBM] INFO:     result = g.send(result)
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/crawler.py", line 90, in crawl
+2017-01-17 13:03:44 [IBM] INFO:     six.reraise(*exc_info)
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/crawler.py", line 72, in crawl
+2017-01-17 13:03:44 [IBM] INFO:     self.engine = self._create_engine()
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/crawler.py", line 97, in _create_engine
+2017-01-17 13:03:44 [IBM] INFO:     return ExecutionEngine(self, lambda _: self.stop())
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/core/engine.py", line 70, in __init__
+2017-01-17 13:03:44 [IBM] INFO:     self.scraper = Scraper(crawler)
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/core/scraper.py", line 71, in __init__
+2017-01-17 13:03:44 [IBM] INFO:     self.itemproc = itemproc_cls.from_crawler(crawler)
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/middleware.py", line 58, in from_crawler
+2017-01-17 13:03:44 [IBM] INFO:     return cls.from_settings(crawler.settings, crawler)
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/middleware.py", line 34, in from_settings
+2017-01-17 13:03:44 [IBM] INFO:     mwcls = load_object(clspath)
+2017-01-17 13:03:44 [IBM] INFO:   File "/Library/Python/2.7/site-packages/scrapy/utils/misc.py", line 49, in load_object
+2017-01-17 13:03:44 [IBM] INFO:     raise NameError("Module '%s' doesn't define any object named '%s'" % (module, name))
+2017-01-17 13:03:44 [IBM] INFO: NameError: Module 'spider.pipelines' doesn't define any object named 'F5_Cleaner'
+2017-01-17 13:06:38 [IBM] INFO: 2017-01-17 13:06:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:06:38 [IBM] INFO: 2017-01-17 13:06:38 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-01-17 13:07:50 [IBM] INFO: 2017-01-17 13:07:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:07:50 [IBM] INFO: 2017-01-17 13:07:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-01-17 13:07:53 [IBM] INFO: 2017-01-17 13:07:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2017-01-17 13:07:53 [IBM] INFO: {'finish_reason': 'shutdown',
+2017-01-17 13:07:53 [IBM] INFO:  'finish_time': datetime.datetime(2017, 1, 17, 5, 7, 53, 67185),
+2017-01-17 13:07:53 [IBM] INFO:  'log_count/DEBUG': 1,
+2017-01-17 13:07:53 [IBM] INFO:  'log_count/INFO': 1,
+2017-01-17 13:07:53 [IBM] INFO:  'start_time': datetime.datetime(2017, 1, 17, 5, 7, 50, 750268)}
+2017-01-17 13:08:16 [IBM] INFO: 2017-01-17 13:08:16 [IBMGuardium] INFO: Reading start URLs from redis key 'ibmguardium:urls' (batch size: 16)
+2017-01-17 13:08:16 [IBM] INFO: 2017-01-17 13:08:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:08:16 [IBM] INFO: 2017-01-17 13:08:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-01-17 13:08:24 [IBM] INFO: 2017-01-17 13:08:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2017-01-17 13:08:24 [IBM] INFO: {'finish_reason': 'shutdown',
+2017-01-17 13:08:24 [IBM] INFO:  'finish_time': datetime.datetime(2017, 1, 17, 5, 8, 24, 300936),
+2017-01-17 13:08:24 [IBM] INFO:  'log_count/DEBUG': 1,
+2017-01-17 13:08:24 [IBM] INFO:  'log_count/INFO': 2,
+2017-01-17 13:08:24 [IBM] INFO:  'start_time': datetime.datetime(2017, 1, 17, 5, 8, 16, 676768)}
+2017-01-17 13:08:39 [IBM] INFO: 2017-01-17 13:08:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:08:39 [IBM] INFO: 2017-01-17 13:08:39 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-01-17 13:08:41 [IBM] INFO: 2017-01-17 13:08:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2017-01-17 13:08:41 [IBM] INFO: {'finish_reason': 'shutdown',
+2017-01-17 13:08:41 [IBM] INFO:  'finish_time': datetime.datetime(2017, 1, 17, 5, 8, 41, 349897),
+2017-01-17 13:08:41 [IBM] INFO:  'log_count/DEBUG': 1,
+2017-01-17 13:08:41 [IBM] INFO:  'log_count/INFO': 1,
+2017-01-17 13:08:41 [IBM] INFO:  'start_time': datetime.datetime(2017, 1, 17, 5, 8, 39, 510720)}
+2017-01-17 13:08:56 [IBM] INFO: 2017-01-17 13:08:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:08:56 [IBM] INFO: 2017-01-17 13:08:56 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-01-17 13:09:05 [IBM] INFO: 2017-01-17 13:09:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:09:05 [IBM] INFO: 2017-01-17 13:09:05 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2017-01-17 13:09:07 [IBM] INFO: 2017-01-17 13:09:07 [IBMGuardium] INFO: Reading start URLs from redis key 'ibmguardium:urls' (batch size: 16)
+2017-01-17 13:09:07 [IBM] INFO: 2017-01-17 13:09:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:09:07 [IBM] INFO: 2017-01-17 13:09:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6025
+2017-01-17 13:09:09 [IBM] INFO: 2017-01-17 13:09:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:09:09 [IBM] INFO: 2017-01-17 13:09:09 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6026
+2017-01-17 13:09:56 [IBM] INFO: 2017-01-17 13:09:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:10:05 [IBM] INFO: 2017-01-17 13:10:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:10:07 [IBM] INFO: 2017-01-17 13:10:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:10:09 [IBM] INFO: 2017-01-17 13:10:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:10:11 [IBM] INFO: 2017-01-17 13:10:11 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://172.16.10.22/robots.txt> (failed 1 times): TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:10:56 [IBM] INFO: 2017-01-17 13:10:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:11:05 [IBM] INFO: 2017-01-17 13:11:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:11:07 [IBM] INFO: 2017-01-17 13:11:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:11:09 [IBM] INFO: 2017-01-17 13:11:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:11:28 [IBM] INFO: 2017-01-17 13:11:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://172.16.10.22/robots.txt> (failed 2 times): TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:11:56 [IBM] INFO: 2017-01-17 13:11:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:12:05 [IBM] INFO: 2017-01-17 13:12:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:12:07 [IBM] INFO: 2017-01-17 13:12:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:12:09 [IBM] INFO: 2017-01-17 13:12:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:12:43 [IBM] INFO: 2017-01-17 13:12:43 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://172.16.10.22/robots.txt> (failed 3 times): TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:12:43 [IBM] INFO: 2017-01-17 13:12:43 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://172.16.10.22/robots.txt>: TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:12:43 [IBM] INFO: TCPTimedOutError: TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:12:56 [IBM] INFO: 2017-01-17 13:12:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:13:05 [IBM] INFO: 2017-01-17 13:13:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:13:07 [IBM] INFO: 2017-01-17 13:13:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:13:09 [IBM] INFO: 2017-01-17 13:13:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:13:56 [IBM] INFO: 2017-01-17 13:13:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:13:58 [IBM] INFO: 2017-01-17 13:13:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://172.16.10.22/agweb/login> (failed 1 times): TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:14:05 [IBM] INFO: 2017-01-17 13:14:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:14:07 [IBM] INFO: 2017-01-17 13:14:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:14:09 [IBM] INFO: 2017-01-17 13:14:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:14:56 [IBM] INFO: 2017-01-17 13:14:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:15:05 [IBM] INFO: 2017-01-17 13:15:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:15:07 [IBM] INFO: 2017-01-17 13:15:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:15:09 [IBM] INFO: 2017-01-17 13:15:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:15:14 [IBM] INFO: 2017-01-17 13:15:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://172.16.10.22/agweb/login> (failed 2 times): TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:15:56 [IBM] INFO: 2017-01-17 13:15:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:16:05 [IBM] INFO: 2017-01-17 13:16:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:16:07 [IBM] INFO: 2017-01-17 13:16:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:16:09 [IBM] INFO: 2017-01-17 13:16:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:16:29 [IBM] INFO: 2017-01-17 13:16:29 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://172.16.10.22/agweb/login> (failed 3 times): TCP connection timed out: 60: Operation timed out.
+2017-01-17 13:16:29 [IBM] INFO: 2017-01-17 13:16:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2017-01-17 13:16:29 [IBM] INFO: {'downloader/exception_count': 6,
+2017-01-17 13:16:29 [IBM] INFO:  'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 6,
+2017-01-17 13:16:29 [IBM] INFO:  'downloader/request_bytes': 1617,
+2017-01-17 13:16:29 [IBM] INFO:  'downloader/request_count': 6,
+2017-01-17 13:16:29 [IBM] INFO:  'downloader/request_method_count/GET': 6,
+2017-01-17 13:16:29 [IBM] INFO:  'finish_reason': 'finished',
+2017-01-17 13:16:29 [IBM] INFO:  'finish_time': datetime.datetime(2017, 1, 17, 5, 16, 29, 306074),
+2017-01-17 13:16:29 [IBM] INFO:  'log_count/DEBUG': 7,
+2017-01-17 13:16:29 [IBM] INFO:  'log_count/ERROR': 1,
+2017-01-17 13:16:29 [IBM] INFO:  'log_count/INFO': 8,
+2017-01-17 13:16:29 [IBM] INFO:  'scheduler/dequeued': 3,
+2017-01-17 13:16:29 [IBM] INFO:  'scheduler/dequeued/memory': 3,
+2017-01-17 13:16:29 [IBM] INFO:  'scheduler/enqueued': 3,
+2017-01-17 13:16:29 [IBM] INFO:  'scheduler/enqueued/memory': 3,
+2017-01-17 13:16:29 [IBM] INFO:  'start_time': datetime.datetime(2017, 1, 17, 5, 8, 56, 217430)}
+2017-01-17 13:17:05 [IBM] INFO: 2017-01-17 13:17:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:17:07 [IBM] INFO: 2017-01-17 13:17:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:17:09 [IBM] INFO: 2017-01-17 13:17:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:18:05 [IBM] INFO: 2017-01-17 13:18:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:18:07 [IBM] INFO: 2017-01-17 13:18:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:18:09 [IBM] INFO: 2017-01-17 13:18:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:19:05 [IBM] INFO: 2017-01-17 13:19:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:19:07 [IBM] INFO: 2017-01-17 13:19:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:19:09 [IBM] INFO: 2017-01-17 13:19:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:20:05 [IBM] INFO: 2017-01-17 13:20:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:20:07 [IBM] INFO: 2017-01-17 13:20:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:20:09 [IBM] INFO: 2017-01-17 13:20:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:21:05 [IBM] INFO: 2017-01-17 13:21:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:21:07 [IBM] INFO: 2017-01-17 13:21:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:21:09 [IBM] INFO: 2017-01-17 13:21:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:22:05 [IBM] INFO: 2017-01-17 13:22:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:22:07 [IBM] INFO: 2017-01-17 13:22:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:22:09 [IBM] INFO: 2017-01-17 13:22:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:23:05 [IBM] INFO: 2017-01-17 13:23:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:23:07 [IBM] INFO: 2017-01-17 13:23:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:23:09 [IBM] INFO: 2017-01-17 13:23:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:24:05 [IBM] INFO: 2017-01-17 13:24:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:24:07 [IBM] INFO: 2017-01-17 13:24:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:24:09 [IBM] INFO: 2017-01-17 13:24:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:25:05 [IBM] INFO: 2017-01-17 13:25:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:25:07 [IBM] INFO: 2017-01-17 13:25:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:25:09 [IBM] INFO: 2017-01-17 13:25:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:26:05 [IBM] INFO: 2017-01-17 13:26:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:26:07 [IBM] INFO: 2017-01-17 13:26:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:26:09 [IBM] INFO: 2017-01-17 13:26:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:27:05 [IBM] INFO: 2017-01-17 13:27:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:27:07 [IBM] INFO: 2017-01-17 13:27:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:27:09 [IBM] INFO: 2017-01-17 13:27:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:28:05 [IBM] INFO: 2017-01-17 13:28:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:28:07 [IBM] INFO: 2017-01-17 13:28:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:28:09 [IBM] INFO: 2017-01-17 13:28:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:29:05 [IBM] INFO: 2017-01-17 13:29:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:29:07 [IBM] INFO: 2017-01-17 13:29:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:30:05 [IBM] INFO: 2017-01-17 13:30:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:30:07 [IBM] INFO: 2017-01-17 13:30:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:31:05 [IBM] INFO: 2017-01-17 13:31:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:31:07 [IBM] INFO: 2017-01-17 13:31:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:32:05 [IBM] INFO: 2017-01-17 13:32:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:32:07 [IBM] INFO: 2017-01-17 13:32:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:33:05 [IBM] INFO: 2017-01-17 13:33:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:33:07 [IBM] INFO: 2017-01-17 13:33:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:34:05 [IBM] INFO: 2017-01-17 13:34:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:34:07 [IBM] INFO: 2017-01-17 13:34:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:35:05 [IBM] INFO: 2017-01-17 13:35:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:35:07 [IBM] INFO: 2017-01-17 13:35:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-17 13:35:35 [IBM] INFO: 2017-01-17 13:35:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2017-01-17 13:35:35 [IBM] INFO: {'finish_reason': 'shutdown',
+2017-01-17 13:35:35 [IBM] INFO:  'finish_time': datetime.datetime(2017, 1, 17, 5, 35, 35, 318443),
+2017-01-17 13:35:35 [IBM] INFO:  'log_count/DEBUG': 1,
+2017-01-17 13:35:35 [IBM] INFO:  'log_count/INFO': 27,
+2017-01-17 13:35:35 [IBM] INFO:  'start_time': datetime.datetime(2017, 1, 17, 5, 9, 5, 790981)}
+2017-01-17 13:35:36 [IBM] INFO: 2017-01-17 13:35:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+2017-01-17 13:35:36 [IBM] INFO: {'finish_reason': 'shutdown',
+2017-01-17 13:35:36 [IBM] INFO:  'finish_time': datetime.datetime(2017, 1, 17, 5, 35, 36, 984563),
+2017-01-17 13:35:36 [IBM] INFO:  'log_count/DEBUG': 1,
+2017-01-17 13:35:36 [IBM] INFO:  'log_count/INFO': 28,
+2017-01-17 13:35:36 [IBM] INFO:  'start_time': datetime.datetime(2017, 1, 17, 5, 9, 7, 758386)}

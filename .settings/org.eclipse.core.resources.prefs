@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//spider/cmdline.py=utf-8
+encoding//spider/spider/items.py=utf-8
+encoding//spider/spider/middlewares.py=utf-8
+encoding//spider/spider/pipelines.py=utf-8
+encoding//spider/spider/settings.py=utf-8
+encoding//spider/spider/spiders/AngleGuard2016.py=utf-8
+encoding//spider/spider/spiders/F5.py=utf-8
+encoding//spider/spider/spiders/IBMGuardium.py=utf-8
+encoding//spider/spider/spiders/NBU.py=utf-8

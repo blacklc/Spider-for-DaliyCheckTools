@@ -1,0 +1,1372 @@
+2016-12-26 16:43:54 [AG2016] INFO: 登陆守护星
+2016-12-26 16:43:54 [AG2016] INFO: 首次访问实时阻塞事件页面
+2016-12-26 16:43:55 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:55 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:56 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:56 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:57 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:57 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:58 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:58 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:59 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:43:59 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:43:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:00 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:00 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:01 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:01 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:02 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:02 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:03 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:03 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:03 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-26 16:44:03 [AG2016] INFO: {'event_PID': u'328',
+2016-12-26 16:44:03 [AG2016] INFO:  'hostname': u'XY-HISAPP05',
+2016-12-26 16:44:03 [AG2016] INFO:  'result_PID': u'0',
+2016-12-26 16:44:03 [AG2016] INFO:  'sql': u"CREATE PROCEDURE yp_MZSearchPIDByReiceipt \r\n@ledger_sn varchar(20)\r\nAS\r\nif  len(@ledger_sn)=8 or len(@ledger_sn)=10\r\nbegin\r\nselect a.patient_id,'%' ledger_sn\r\nfrom mz_patient_mi a\r\nwhere a.p_bar_code like @ledger_sn\r\nend\r\nelse\r\nif len(@ledger_sn) = 12 or len(@ledger_sn)=9\r\n  begin\r\n   select a.patient_id,'%' ledger_sn\r\n   from mz_patient_mi a\r\n   where a.p_bar_code like left(@ledger_sn,9)\r\nend\r\n\r\nelse\r\n\r\nbegin\r\n select a.patient_id,'%' ledger_sn--a.ledger_sn  \r\nfrom mz_receipt a  \r\nwhere a.receipt_sn like @ledger_sn \r\n   and (a.ledger_sn>0) \r\n   and not exists (select b.patient_id from mz_receipt b \r\n                            where b.patient_id =a.patient_id \r\n                            and b.receipt_sn =a.receipt_sn and b.ledger_sn 0) \r\n   and not exists (select b.patient_id from mz_receipt b where b.patient_id =a.patient_id and b.receipt_sn =a.receipt_sn and b.ledger_sn",
+2016-12-26 16:44:03 [AG2016] INFO:  'timestamp': 1482741843.206492}
+2016-12-26 16:44:03 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-26 16:44:04 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:04 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:05 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:05 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:06 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:06 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:07 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:07 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:07 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:08 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:09 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:09 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:09 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:10 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:10 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:11 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:11 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:12 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:12 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:13 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:13 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:14 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:14 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:15 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:44:15 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:44:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:44 [AG2016] INFO: 登陆守护星
+2016-12-26 16:50:44 [AG2016] INFO: 首次访问实时阻塞事件页面
+2016-12-26 16:50:44 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:44 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:45 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:45 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:45 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:45 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:46 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:46 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:46 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:46 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:47 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:47 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:47 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:47 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:48 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:48 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:49 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:49 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:49 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:49 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:50 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:50 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:51 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:51 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:51 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:51 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:52 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:52 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:52 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:52 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:53 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:53 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:54 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:54 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:55 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:50:55 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:50:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:18 [AG2016] INFO: 登陆守护星
+2016-12-26 16:53:18 [AG2016] INFO: 首次访问实时阻塞事件页面
+2016-12-26 16:53:18 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:19 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:19 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:20 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:20 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:21 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:21 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:22 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:22 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-26 16:53:23 [AG2016] INFO: 开始本次爬取
+2016-12-26 16:53:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:48:41 [AG2016] INFO: 登陆守护星
+2016-12-27 10:48:41 [AG2016] INFO: 首次访问实时阻塞事件页面
+2016-12-27 10:48:42 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:48:42 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 10:54:39 [AG2016] INFO: 登陆守护星
+2016-12-27 10:54:40 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 10:54:40 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:42 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:42 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:43 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:43 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:44 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:44 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:44 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:44 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:45 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:45 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:46 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:46 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:46 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:46 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:48 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:48 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:49 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:49 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 10:54:49 [AG2016] INFO: {'_eventPID': u'4394',
+2016-12-27 10:54:49 [AG2016] INFO:  '_hostname': u'XY-HISAPP05',
+2016-12-27 10:54:49 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 10:54:49 [AG2016] INFO:  '_sql': u'select * from mz_detail_charge_back (nolock) where 1 = 2',
+2016-12-27 10:54:49 [AG2016] INFO:  '_timestamp': 1482807288.113964}
+2016-12-27 10:54:49 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 10:54:52 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:52 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 10:54:52 [AG2016] INFO: {'_eventPID': u'12153',
+2016-12-27 10:54:52 [AG2016] INFO:  '_hostname': u'XY-HISAPP07',
+2016-12-27 10:54:52 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 10:54:52 [AG2016] INFO:  '_sql': u'select mz_charge_sn from mz_generator_charge_no',
+2016-12-27 10:54:52 [AG2016] INFO:  '_timestamp': 1482807289.96606}
+2016-12-27 10:54:52 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 10:54:53 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:54 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:55 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:56 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:57 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:58 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:54:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:54:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:55:00 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:55:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 10:55:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 10:55:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:00:43 [AG2016] INFO: 登陆守护星
+2016-12-27 11:00:43 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:00:44 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:00:44 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:00:44 [AG2016] INFO: {'_eventPID': u'284',
+2016-12-27 11:00:44 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:44 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(3328);">3328</a>',
+2016-12-27 11:00:44 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='9' and exam_code ='\u6838\u78c1\u810a\u67f1\u5e73\u626b') or (exam_flag ='2' and exam_code ='0010') or (exam_flag ='0' and exam_code ='000024') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 11:00:44 [AG2016] INFO:  '_timestamp': 1482807643.474151}
+2016-12-27 11:00:44 [AG2016] INFO: *****************
+2016-12-27 11:00:44 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 11:00:44 [AG2016] INFO: {'_eventPID': u'3328',
+2016-12-27 11:00:44 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:44 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:00:44 [AG2016] INFO:  '_sql': u"(@P0 float)select yyorderdet0_.order_sn as order1_53_, yyorderdet0_.yyh_sn as yyh2_53_, yyorderdet0_.exam_serial as exam3_53_, yyorderdet0_.order_status as order4_53_, yyorderdet0_.patient_id as patient5_53_, yyorderdet0_.mz_zy_flag as mz6_53_, yyorderdet0_.opper_code as opper7_53_, yyorderdet0_.opper_dept as opper8_53_, yyorderdet0_.opper_date as opper9_53_, yyorderdet0_.print_flag as print10_53_, yyorderdet0_.print_sn as print11_53_, yyorderdet0_.print_time as print12_53_, yyorderdet0_.close_flag as close13_53_, yyorderdet0_.channel_type as channel14_53_, yyorderdet0_.exam_flag as exam15_53_, yyorderdet0_.yz_act_order_no as yz16_53_, yyorderdet0_.exam_type as exam17_53_, yyorderdet0_.exam_sub_type as exam18_53_, yyorderdet0_.check_flag as check19_53_, yyorderdet0_.picture_name as picture20_53_, yyorderdet0_.ris_print_flag as ris21_53_ from yy_order_detl yyorderdet0_ where isnull(yyorderdet0_.yz_act_order_no, 0)=@P0 and yyorderdet0_.close_flag='0' and (yyorderdet0_.order_status in ('1' , '2'))",
+2016-12-27 11:00:44 [AG2016] INFO:  '_timestamp': 1482807643.474151}
+2016-12-27 11:00:44 [AG2016] INFO: *****************
+2016-12-27 11:00:44 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-27 11:00:45 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:00:45 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:00:45 [AG2016] INFO: {'_eventPID': u'284',
+2016-12-27 11:00:45 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:45 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(3328);">3328</a>',
+2016-12-27 11:00:45 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='9' and exam_code ='\u6838\u78c1\u810a\u67f1\u5e73\u626b') or (exam_flag ='2' and exam_code ='0010') or (exam_flag ='0' and exam_code ='000024') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 11:00:45 [AG2016] INFO:  '_timestamp': 1482807644.708359}
+2016-12-27 11:00:45 [AG2016] INFO: *****************
+2016-12-27 11:00:45 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 11:00:45 [AG2016] INFO: {'_eventPID': u'3328',
+2016-12-27 11:00:45 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:45 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:00:45 [AG2016] INFO:  '_sql': u"(@P0 float)select yyorderdet0_.order_sn as order1_53_, yyorderdet0_.yyh_sn as yyh2_53_, yyorderdet0_.exam_serial as exam3_53_, yyorderdet0_.order_status as order4_53_, yyorderdet0_.patient_id as patient5_53_, yyorderdet0_.mz_zy_flag as mz6_53_, yyorderdet0_.opper_code as opper7_53_, yyorderdet0_.opper_dept as opper8_53_, yyorderdet0_.opper_date as opper9_53_, yyorderdet0_.print_flag as print10_53_, yyorderdet0_.print_sn as print11_53_, yyorderdet0_.print_time as print12_53_, yyorderdet0_.close_flag as close13_53_, yyorderdet0_.channel_type as channel14_53_, yyorderdet0_.exam_flag as exam15_53_, yyorderdet0_.yz_act_order_no as yz16_53_, yyorderdet0_.exam_type as exam17_53_, yyorderdet0_.exam_sub_type as exam18_53_, yyorderdet0_.check_flag as check19_53_, yyorderdet0_.picture_name as picture20_53_, yyorderdet0_.ris_print_flag as ris21_53_ from yy_order_detl yyorderdet0_ where isnull(yyorderdet0_.yz_act_order_no, 0)=@P0 and yyorderdet0_.close_flag='0' and (yyorderdet0_.order_status in ('1' , '2'))",
+2016-12-27 11:00:45 [AG2016] INFO:  '_timestamp': 1482807644.708359}
+2016-12-27 11:00:45 [AG2016] INFO: *****************
+2016-12-27 11:00:45 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-27 11:00:46 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:00:46 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:00:46 [AG2016] INFO: {'_eventPID': u'284',
+2016-12-27 11:00:46 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:46 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(3328);">3328</a>',
+2016-12-27 11:00:46 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='9' and exam_code ='\u6838\u78c1\u810a\u67f1\u5e73\u626b') or (exam_flag ='2' and exam_code ='0010') or (exam_flag ='0' and exam_code ='000024') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 11:00:46 [AG2016] INFO:  '_timestamp': 1482807645.91644}
+2016-12-27 11:00:46 [AG2016] INFO: *****************
+2016-12-27 11:00:46 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 11:00:46 [AG2016] INFO: {'_eventPID': u'3328',
+2016-12-27 11:00:46 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:46 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:00:46 [AG2016] INFO:  '_sql': u"(@P0 float)select yyorderdet0_.order_sn as order1_53_, yyorderdet0_.yyh_sn as yyh2_53_, yyorderdet0_.exam_serial as exam3_53_, yyorderdet0_.order_status as order4_53_, yyorderdet0_.patient_id as patient5_53_, yyorderdet0_.mz_zy_flag as mz6_53_, yyorderdet0_.opper_code as opper7_53_, yyorderdet0_.opper_dept as opper8_53_, yyorderdet0_.opper_date as opper9_53_, yyorderdet0_.print_flag as print10_53_, yyorderdet0_.print_sn as print11_53_, yyorderdet0_.print_time as print12_53_, yyorderdet0_.close_flag as close13_53_, yyorderdet0_.channel_type as channel14_53_, yyorderdet0_.exam_flag as exam15_53_, yyorderdet0_.yz_act_order_no as yz16_53_, yyorderdet0_.exam_type as exam17_53_, yyorderdet0_.exam_sub_type as exam18_53_, yyorderdet0_.check_flag as check19_53_, yyorderdet0_.picture_name as picture20_53_, yyorderdet0_.ris_print_flag as ris21_53_ from yy_order_detl yyorderdet0_ where isnull(yyorderdet0_.yz_act_order_no, 0)=@P0 and yyorderdet0_.close_flag='0' and (yyorderdet0_.order_status in ('1' , '2'))",
+2016-12-27 11:00:46 [AG2016] INFO:  '_timestamp': 1482807645.91644}
+2016-12-27 11:00:46 [AG2016] INFO: *****************
+2016-12-27 11:00:46 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-27 11:00:47 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:00:47 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:00:47 [AG2016] INFO: {'_eventPID': u'284',
+2016-12-27 11:00:47 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:47 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(3328);">3328</a>',
+2016-12-27 11:00:47 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='9' and exam_code ='\u6838\u78c1\u810a\u67f1\u5e73\u626b') or (exam_flag ='2' and exam_code ='0010') or (exam_flag ='0' and exam_code ='000024') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 11:00:47 [AG2016] INFO:  '_timestamp': 1482807646.84099}
+2016-12-27 11:00:47 [AG2016] INFO: *****************
+2016-12-27 11:00:47 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 11:00:47 [AG2016] INFO: {'_eventPID': u'3328',
+2016-12-27 11:00:47 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:00:47 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:00:47 [AG2016] INFO:  '_sql': u'IF @@TRANCOUNT > 0 COMMIT TRAN set implicit_transactions off',
+2016-12-27 11:00:47 [AG2016] INFO:  '_timestamp': 1482807646.84099}
+2016-12-27 11:00:47 [AG2016] INFO: *****************
+2016-12-27 11:00:47 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-27 11:39:29 [AG2016] INFO: 登陆守护星
+2016-12-27 11:39:29 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:39:30 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:32 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:32 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:34 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:34 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:35 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:37 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:37 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:38 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:38 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:38 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:39:38 [AG2016] INFO: {'_eventPID': u'923',
+2016-12-27 11:39:38 [AG2016] INFO:  '_hostname': u'XY-HISAPP28',
+2016-12-27 11:39:38 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(9349);">9349</a>',
+2016-12-27 11:39:38 [AG2016] INFO:  '_sql': u"(@P1 int)UPDATE mz_order_generator\r\n     SET max_sn =max_sn+@P1 \r\nwhere define='mz_receipt_sn'",
+2016-12-27 11:39:38 [AG2016] INFO:  '_timestamp': 1482809978.108917}
+2016-12-27 11:39:38 [AG2016] INFO: *****************
+2016-12-27 11:39:38 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:39:39 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:39 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:40 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:40 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:42 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:42 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:42 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:42 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:43 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:43 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:39:44 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:39:44 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:00 [AG2016] INFO: 登陆守护星
+2016-12-27 11:40:00 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:40:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:02 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:40:02 [AG2016] INFO: {'_eventPID': u'7707',
+2016-12-27 11:40:02 [AG2016] INFO:  '_hostname': u'XY-HISAPP26',
+2016-12-27 11:40:02 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:40:02 [AG2016] INFO:  '_sql': u'select use_lis_p2p_interface_flag from mz_config (nolock)',
+2016-12-27 11:40:02 [AG2016] INFO:  '_timestamp': 1482810001.911193}
+2016-12-27 11:40:02 [AG2016] INFO: *****************
+2016-12-27 11:40:02 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:40:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:40:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:40:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:25 [AG2016] INFO: 登陆守护星
+2016-12-27 11:41:26 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:41:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:26 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:41:26 [AG2016] INFO: {'_eventPID': u'8889',
+2016-12-27 11:41:26 [AG2016] INFO:  '_hostname': u'XY-HISAPP02',
+2016-12-27 11:41:26 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:41:26 [AG2016] INFO:  '_sql': u'(@P1 int,@P2 int,@P3 int,@P4 image)INSERT INTO "chisdb_bjrm_mz".."interface_ie_mz_log_params" ("log_id","param_index","param_type","param_content") VALUES (@P1,@P2,@P3,@P4)',
+2016-12-27 11:41:26 [AG2016] INFO:  '_timestamp': 1482810086.040908}
+2016-12-27 11:41:26 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:41:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:27 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:41:27 [AG2016] INFO: {'_eventPID': u'5468',
+2016-12-27 11:41:27 [AG2016] INFO:  '_hostname': u'XY-HISAPP26',
+2016-12-27 11:41:27 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(5926);">5926</a>',
+2016-12-27 11:41:27 [AG2016] INFO:  '_sql': u"(@P1 int)UPDATE mz_order_generator\r\n     SET max_sn =max_sn+@P1 \r\nwhere define='mz_receipt_sn'",
+2016-12-27 11:41:27 [AG2016] INFO:  '_timestamp': 1482810086.928623}
+2016-12-27 11:41:27 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:41:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:30 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:32 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:33 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:41:33 [AG2016] INFO: {'_eventPID': u'483',
+2016-12-27 11:41:33 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 11:41:33 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(483);">483</a>',
+2016-12-27 11:41:33 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='2' and exam_code ='1069') or (exam_flag ='1' and exam_code ='\u6ccc\u5c3f\u7cfb') or (exam_flag ='0' and exam_code ='000147') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 11:41:33 [AG2016] INFO:  '_timestamp': 1482810092.429939}
+2016-12-27 11:41:33 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:41:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:34 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:35 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:41:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:41:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:05 [AG2016] INFO: 登陆守护星
+2016-12-27 11:47:05 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:47:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:07 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:16 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:47:16 [AG2016] INFO: {'_eventPID': u'52',
+2016-12-27 11:47:16 [AG2016] INFO:  '_hostname': u'XY-HISAPP02',
+2016-12-27 11:47:16 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:47:16 [AG2016] INFO:  '_sql': u"CREATE proc [dbo].[usp_generate_prep_drug]  \r\n(@patient_id varchar(20),  \r\n @ledger_sn int,  \r\n @extend_param varchar(100)  \r\n)  \r\nas  \r\n  set nocount on  \r\n  \r\n  declare /*@send_no varchar(100),*/ @yff_id int\r\n  /*insert into seq_mz_send_med_no_prep_drug default values\r\n  set @send_no = CONVERT(varchar(100), scope_identity())\r\n  */\r\n  ,@error int, @rowcount int\r\n  ,@sysdate datetime\r\n  \r\n  set @sysdate = GETDATE()\r\n  \r\n  declare @tbl_order_count table(\r\n  patient_id varchar(30),\r\n  times int,\r\n  order_no int,\r\n  windows_no int\r\n  )  \r\n  \r\n  set @yff_id = 0\r\n  if isnull(@extend_param, '|')  '|'\r\n    set @yff_id = CONVERT(int, @extend_param)    \r\n    \r\n  select * into #tbl_mz_detail_charge_prep_drug_cancel\r\n  from mz_detail_charge_prep_drug mdc\r\n  where\r\n     @ledger_sn  0 or mdc.yff_id > 0)       \r\n\t and not exists  \r\n\t (select 1 from mz_detail_charge_prep_drug vb (nolock)   \r\n\t   where mdc.patient_id = vb.patient_id and mdc.order_type = vb.order_type    \r\n\t   and mdc.order_no = vb.order_no and mdc.item_no = vb.item_no  \r\n\t   and mdc.times = vb.times   \r\n\t   and ((mdc.send_no = vb.send_no) and\r\n\t\t (vb.ledger_sn  0\r\n\t  begin\r\n\t\tif ((select dbo.ufn_GetBaiYaoRegControl_GuoYao()) = 1) \r\n\t\tbegin\r\n\t\t  update mz_detail_charge \r\n\t\t  set windows_no = null\r\n\t\t  where \r\n\t\t      patient_id = @patient_id\r\n\t\t      and price_data >= CONVERT(varchar(10), @sysdate, 121)\r\n\t\t\t  and account_date  '**'\r\n\t\t\t  and ISNULL(buy_price, 0) >= 2.0\r\n\t\t\t  and confirm_date is null\r\n\t\t\t  and ISNULL(windows_no, 0) > 0\r\n\t\t\t  and ledger_sn = @ledger_sn\r\n\t\t  if @@ERROR  0 \r\n\t\t\tgoto rollbacktran\r\n\t\t\t\t\t\t  \r\n\t\t  commit tran\r\n\t\t  goto procend\t\t\t  \r\n\t\tend\r\n\t  end \r\n\r\n\t  insert into [mz_detail_charge_prep_drug]\r\n\t  output inserted.patient_id, inserted.times, \r\n\t\t\t inserted.order_no, inserted.windows_no\r\n\t  into @tbl_order_count   \r\n\t  select mdc.[patient_id],\r\n\t\tmdc.[times],\r\n\t\tmdc.[order_type],\r\n\t\tmdc.[order_no],\r\n\t\tmdc.[item_no],\r\n\t\tmdc.[ledger_sn],\r\n\t\tmdc.[charge_code],\r\n\t\tmdc.[serial_no],\r\n\t\tmdc.[group_no],\r\n\t\tmdc.[charge_status],\r\n\t\tmdc.[exec_sn],\r\n\t\tmdc.[charge_amount],\r\n\t\tmdc.[orig_price],\r\n\t\tmdc.[charge_price],\r\n\t\tmdc.[caoyao_fu],\r\n\t\tmdc.[back_amount],\r\n\t\tmdc.[happen_date],\r\n\t\tmdc.[price_data],\r\n\t\tmdc.[price_opera],\r\n\t\tmdc.[enter_date],\r\n\t\tmdc.[enter_opera],\r\n\t\t/*\u4e0d\u80fd\u4e3a\u7a7a*/\r\n\t\tmdc.[windows_no],\r\n\t\tmdc.[supply_code],\r\n\t\tmdc.[dosage],\r\n\t\tmdc.[freq_code],\r\n\t\tmdc.[persist_days],\r\n\t\tmdc.[dosage_unit],\r\n\t\tmdc.[charge_no],\r\n\t\tmdc.[buy_price],\r\n\t\tmdc.[name],\r\n\t\tmdc.[apply_unit],\r\n\t\tmdc.[doctor_code],\r\n\t\tmdc.[parent_no],\r\n\t\tmdc.[order_properties],\r\n\t\tmdc.[drug_amount],\r\n\t\tmdc.[persist_days4charge_amount],\r\n\t\tmdc.[id],\r\n\t\t@yff_id,  \r\n\t\tcase when (@ledger_sn  0 then convert(varchar(20), ABS(mdc.ledger_sn))\r\n\t\t   else 'y' + convert(varchar(30), ABS(@yff_id)) end + '_' +  \r\n\t\tconvert(varchar(10), mdc.windows_no) end\r\n\t\t/*@send_no*/\r\n\t\t send_no, /*\u53d1\u836f\u7f16\u53f7*/  \r\n\t\t @sysdate data_insert_date, /*\u6570\u636e\u751f\u6210\u65f6\u95f4*/  \r\n\t\t null guid1, /*\u83b7\u53d6\u5f85\u6446\u836f\u6570\u636eguid*/  \r\n\t\t null guid1_date, /*\u83b7\u53d6\u5f85\u6446\u836f\u6570\u636e\u65f6\u95f4*/  \r\n\t\t null guid2,/*\u83b7\u53d6\u5df2\u53d1\u836f\u6570\u636eguid\uff0c\u7528\u4e8e\u836f\u67b6\u8d27\u4f4d\u91ca\u653e*/  \r\n\t\t null guid2_date, /*\u83b7\u53d6\u5df2\u53d1\u836f\u6570\u636e\u65f6\u95f4*/     \r\n\t\t 0 prepare_status,/*\u836f\u54c1\u8fc7\u7a0b\u72b6\u6001\uff0c0\u521d\u59cb\u503c\uff0c1\u6446\u836f\u5b8c\u6210\uff0c2\u7f3a\u836f*/  \r\n\t\t null prepare_status_date,/*\u836f\u54c1\u8fc7\u7a0b\u72b6\u6001\u66f4\u65b0\u65f6\u95f4*/ \r\n\t     \r\n\t\t /*\u7f3a\u836f\u6807\u5fd7\uff0c\u7f3a\u836f\u6570\u91cf\uff0c\u9ed8\u8ba4\u4e3a0\u5373\u4e0d\u7f3a\u836f\uff0c\u5927\u4e8e0\u4e3a\u53d6\u836f*/\r\n\t\t 0 [lack_amount],\r\n\t\t /*\u7f3a\u836f\u65f6\u95f4*/\r\n\t\t null [lack_amount_date],\r\n\t\t /*\u6446\u836f\u5b8c\u6210\uff0c\u79ef\u538b\u901a\u77e5\u6807\u5fd7, \u9ed8\u8ba4\u503c\u4e3a0\u5373\u65e0\u79ef\u538b, 1\u4e3a\u79ef\u538b*/\r\n\t\t 0 [block_flag],\r\n\t\t /*\u6446\u836f\u5b8c\u6210\uff0c\u79ef\u538b\u901a\u77e5\u65f6\u95f4*/\r\n\t\t null [block_flag_date],\t\r\n\t\t       \r\n\t\t 0 send_status,/*\u53d1\u836f\u72b6\u6001\uff0c0\u521d\u59cb\u503c\uff0c1\u53d1\u836f\u5b8c\u6210*/  \r\n\t\t null send_status_date,/*\u53d1\u836f\u72b6\u6001\u66f4\u65b0\u65f6\u95f4*/  \r\n\t\t null medicine_position_no /*\u836f\u54c1\u6240\u5728\u8d27\u4f4d\u7f16\u53f7\uff0c\u7b2c\u4e09\u65b9\u6446\u836f\u5b8c\u6210\u4f20\u5165*/  \r\n\t   from mz_detail_charge mdc (nolock)\r\n\t\t left join #tbl_mz_detail_charge_prep_drug_cancel mc on\r\n\t\t   mdc.patient_id = mc.patient_id and isnull(mdc.source_id, 0) = mc.id  \r\n\t   where mdc.patient_id = @patient_id and \r\n\t   ((mdc.ledger_sn = @ledger_sn and @ledger_sn  0 and \r\n\t\t (isnull(mdc.buy_price, 1.0) = 2.0 and @ledger_sn = 0 and \r\n\t\t\t\t\t\t\t\t\t\t\texists(select 1 from mz_detail_charge_prepay mp (nolock) \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   where mdc.id = mp.id and \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t mp.yff_id = @yff_id)))\r\n\t   /*\u975e\u8bca\u7597*/  \r\n\t   and mdc.serial_no  '**'  \r\n\t   /*\u8fc7\u6ee4\u4e0d\u542b\u6709\u7a97\u53e3\u7684\u836f\u54c1*/  \r\n\t   and isnull(mdc.windows_no, 0) > 0  \r\n\t   /*\u8fc7\u6ee4\u9884\u4ed8\u8d39\u6570\u636e\uff08\u4e0d\u518d\u4f7f\u7528\uff09\uff0c\u4f7f\u7528\u5df2\u53d1\u836f\u6761\u4ef6\u8fc7\u6ee4*/  \r\n\t   /*and buy_price = 0 or @yff_id > 0 or @yff_id  0 \r\n\t\tgoto rollbacktran\r\n\t\t\r\n\t\t/*zhangsg 20140718 \u9000\u8d39\u3001\u53d6\u6d88\u9884\u4ed8\u8d39\u3001\u53d6\u6d88\u8bb0\u8d26\u65f6\uff0c\u66f4\u65b0\uff08\u51cf\u5c11\uff09\u53d1\u836f\u7a97\u53e3\u7d2f\u8ba1\u603b\u5904\u65b9\u6570*/\r\n\t\tif (@yff_id  0)\r\n\t\tbegin\r\n\t\t  update zd_yp_windows_info \r\n\t\t  set total_order_count = total_order_count - \r\n\t\t\t(select COUNT(*) from \r\n\t\t\t(select distinct * from @tbl_order_count \r\n\t\t\t  where windows_no = b.windows_no) aa )\r\n\t\t  from zd_yp_windows_info a\r\n\t\t  inner join (select distinct windows_no from @tbl_order_count) b \r\n\t\t\t on a.windows_no = b.windows_no        \r\n\t\t  if @@ERROR  0 \r\n\t\t\tgoto rollbacktran        \r\n\t\tend\r\n    \r\n  commit tran\r\n  goto procend\r\n  \r\nrollbacktran:\r\n  if @@TRANCOUNT > 0 rollback tran\r\nprocend:\r\n;\r\n\r\ndrop table #tbl_mz_detail_charge_prep_drug_cancel\r\nset nocount off",
+2016-12-27 11:47:16 [AG2016] INFO:  '_timestamp': 1482810435.854279}
+2016-12-27 11:47:16 [AG2016] INFO: ^^^^^^^^^^^
+2016-12-27 11:47:16 [AG2016] INFO: {'_eventPID': u'52',
+2016-12-27 11:47:16 [AG2016] INFO:  '_hostname': u'XY-HISAPP02',
+2016-12-27 11:47:16 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(0);">0</a>',
+2016-12-27 11:47:16 [AG2016] INFO:  '_sql': u"CREATE proc [dbo].[usp_generate_prep_drug]  \r\n(@patient_id varchar(20),  \r\n @ledger_sn int,  \r\n @extend_param varchar(100)  \r\n)  \r\nas  \r\n  set nocount on  \r\n  \r\n  declare /*@send_no varchar(100),*/ @yff_id int\r\n  /*insert into seq_mz_send_med_no_prep_drug default values\r\n  set @send_no = CONVERT(varchar(100), scope_identity())\r\n  */\r\n  ,@error int, @rowcount int\r\n  ,@sysdate datetime\r\n  \r\n  set @sysdate = GETDATE()\r\n  \r\n  declare @tbl_order_count table(\r\n  patient_id varchar(30),\r\n  times int,\r\n  order_no int,\r\n  windows_no int\r\n  )  \r\n  \r\n  set @yff_id = 0\r\n  if isnull(@extend_param, '|')  '|'\r\n    set @yff_id = CONVERT(int, @extend_param)    \r\n    \r\n  select * into #tbl_mz_detail_charge_prep_drug_cancel\r\n  from mz_detail_charge_prep_drug mdc\r\n  where\r\n     @ledger_sn  0 or mdc.yff_id > 0)       \r\n\t and not exists  \r\n\t (select 1 from mz_detail_charge_prep_drug vb (nolock)   \r\n\t   where mdc.patient_id = vb.patient_id and mdc.order_type = vb.order_type    \r\n\t   and mdc.order_no = vb.order_no and mdc.item_no = vb.item_no  \r\n\t   and mdc.times = vb.times   \r\n\t   and ((mdc.send_no = vb.send_no) and\r\n\t\t (vb.ledger_sn  0\r\n\t  begin\r\n\t\tif ((select dbo.ufn_GetBaiYaoRegControl_GuoYao()) = 1) \r\n\t\tbegin\r\n\t\t  update mz_detail_charge \r\n\t\t  set windows_no = null\r\n\t\t  where \r\n\t\t      patient_id = @patient_id\r\n\t\t      and price_data >= CONVERT(varchar(10), @sysdate, 121)\r\n\t\t\t  and account_date  '**'\r\n\t\t\t  and ISNULL(buy_price, 0) >= 2.0\r\n\t\t\t  and confirm_date is null\r\n\t\t\t  and ISNULL(windows_no, 0) > 0\r\n\t\t\t  and ledger_sn = @ledger_sn\r\n\t\t  if @@ERROR  0 \r\n\t\t\tgoto rollbacktran\r\n\t\t\t\t\t\t  \r\n\t\t  commit tran\r\n\t\t  goto procend\t\t\t  \r\n\t\tend\r\n\t  end \r\n\r\n\t  insert into [mz_detail_charge_prep_drug]\r\n\t  output inserted.patient_id, inserted.times, \r\n\t\t\t inserted.order_no, inserted.windows_no\r\n\t  into @tbl_order_count   \r\n\t  select mdc.[patient_id],\r\n\t\tmdc.[times],\r\n\t\tmdc.[order_type],\r\n\t\tmdc.[order_no],\r\n\t\tmdc.[item_no],\r\n\t\tmdc.[ledger_sn],\r\n\t\tmdc.[charge_code],\r\n\t\tmdc.[serial_no],\r\n\t\tmdc.[group_no],\r\n\t\tmdc.[charge_status],\r\n\t\tmdc.[exec_sn],\r\n\t\tmdc.[charge_amount],\r\n\t\tmdc.[orig_price],\r\n\t\tmdc.[charge_price],\r\n\t\tmdc.[caoyao_fu],\r\n\t\tmdc.[back_amount],\r\n\t\tmdc.[happen_date],\r\n\t\tmdc.[price_data],\r\n\t\tmdc.[price_opera],\r\n\t\tmdc.[enter_date],\r\n\t\tmdc.[enter_opera],\r\n\t\t/*\u4e0d\u80fd\u4e3a\u7a7a*/\r\n\t\tmdc.[windows_no],\r\n\t\tmdc.[supply_code],\r\n\t\tmdc.[dosage],\r\n\t\tmdc.[freq_code],\r\n\t\tmdc.[persist_days],\r\n\t\tmdc.[dosage_unit],\r\n\t\tmdc.[charge_no],\r\n\t\tmdc.[buy_price],\r\n\t\tmdc.[name],\r\n\t\tmdc.[apply_unit],\r\n\t\tmdc.[doctor_code],\r\n\t\tmdc.[parent_no],\r\n\t\tmdc.[order_properties],\r\n\t\tmdc.[drug_amount],\r\n\t\tmdc.[persist_days4charge_amount],\r\n\t\tmdc.[id],\r\n\t\t@yff_id,  \r\n\t\tcase when (@ledger_sn  0 then convert(varchar(20), ABS(mdc.ledger_sn))\r\n\t\t   else 'y' + convert(varchar(30), ABS(@yff_id)) end + '_' +  \r\n\t\tconvert(varchar(10), mdc.windows_no) end\r\n\t\t/*@send_no*/\r\n\t\t send_no, /*\u53d1\u836f\u7f16\u53f7*/  \r\n\t\t @sysdate data_insert_date, /*\u6570\u636e\u751f\u6210\u65f6\u95f4*/  \r\n\t\t null guid1, /*\u83b7\u53d6\u5f85\u6446\u836f\u6570\u636eguid*/  \r\n\t\t null guid1_date, /*\u83b7\u53d6\u5f85\u6446\u836f\u6570\u636e\u65f6\u95f4*/  \r\n\t\t null guid2,/*\u83b7\u53d6\u5df2\u53d1\u836f\u6570\u636eguid\uff0c\u7528\u4e8e\u836f\u67b6\u8d27\u4f4d\u91ca\u653e*/  \r\n\t\t null guid2_date, /*\u83b7\u53d6\u5df2\u53d1\u836f\u6570\u636e\u65f6\u95f4*/     \r\n\t\t 0 prepare_status,/*\u836f\u54c1\u8fc7\u7a0b\u72b6\u6001\uff0c0\u521d\u59cb\u503c\uff0c1\u6446\u836f\u5b8c\u6210\uff0c2\u7f3a\u836f*/  \r\n\t\t null prepare_status_date,/*\u836f\u54c1\u8fc7\u7a0b\u72b6\u6001\u66f4\u65b0\u65f6\u95f4*/ \r\n\t     \r\n\t\t /*\u7f3a\u836f\u6807\u5fd7\uff0c\u7f3a\u836f\u6570\u91cf\uff0c\u9ed8\u8ba4\u4e3a0\u5373\u4e0d\u7f3a\u836f\uff0c\u5927\u4e8e0\u4e3a\u53d6\u836f*/\r\n\t\t 0 [lack_amount],\r\n\t\t /*\u7f3a\u836f\u65f6\u95f4*/\r\n\t\t null [lack_amount_date],\r\n\t\t /*\u6446\u836f\u5b8c\u6210\uff0c\u79ef\u538b\u901a\u77e5\u6807\u5fd7, \u9ed8\u8ba4\u503c\u4e3a0\u5373\u65e0\u79ef\u538b, 1\u4e3a\u79ef\u538b*/\r\n\t\t 0 [block_flag],\r\n\t\t /*\u6446\u836f\u5b8c\u6210\uff0c\u79ef\u538b\u901a\u77e5\u65f6\u95f4*/\r\n\t\t null [block_flag_date],\t\r\n\t\t       \r\n\t\t 0 send_status,/*\u53d1\u836f\u72b6\u6001\uff0c0\u521d\u59cb\u503c\uff0c1\u53d1\u836f\u5b8c\u6210*/  \r\n\t\t null send_status_date,/*\u53d1\u836f\u72b6\u6001\u66f4\u65b0\u65f6\u95f4*/  \r\n\t\t null medicine_position_no /*\u836f\u54c1\u6240\u5728\u8d27\u4f4d\u7f16\u53f7\uff0c\u7b2c\u4e09\u65b9\u6446\u836f\u5b8c\u6210\u4f20\u5165*/  \r\n\t   from mz_detail_charge mdc (nolock)\r\n\t\t left join #tbl_mz_detail_charge_prep_drug_cancel mc on\r\n\t\t   mdc.patient_id = mc.patient_id and isnull(mdc.source_id, 0) = mc.id  \r\n\t   where mdc.patient_id = @patient_id and \r\n\t   ((mdc.ledger_sn = @ledger_sn and @ledger_sn  0 and \r\n\t\t (isnull(mdc.buy_price, 1.0) = 2.0 and @ledger_sn = 0 and \r\n\t\t\t\t\t\t\t\t\t\t\texists(select 1 from mz_detail_charge_prepay mp (nolock) \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t   where mdc.id = mp.id and \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t mp.yff_id = @yff_id)))\r\n\t   /*\u975e\u8bca\u7597*/  \r\n\t   and mdc.serial_no  '**'  \r\n\t   /*\u8fc7\u6ee4\u4e0d\u542b\u6709\u7a97\u53e3\u7684\u836f\u54c1*/  \r\n\t   and isnull(mdc.windows_no, 0) > 0  \r\n\t   /*\u8fc7\u6ee4\u9884\u4ed8\u8d39\u6570\u636e\uff08\u4e0d\u518d\u4f7f\u7528\uff09\uff0c\u4f7f\u7528\u5df2\u53d1\u836f\u6761\u4ef6\u8fc7\u6ee4*/  \r\n\t   /*and buy_price = 0 or @yff_id > 0 or @yff_id  0 \r\n\t\tgoto rollbacktran\r\n\t\t\r\n\t\t/*zhangsg 20140718 \u9000\u8d39\u3001\u53d6\u6d88\u9884\u4ed8\u8d39\u3001\u53d6\u6d88\u8bb0\u8d26\u65f6\uff0c\u66f4\u65b0\uff08\u51cf\u5c11\uff09\u53d1\u836f\u7a97\u53e3\u7d2f\u8ba1\u603b\u5904\u65b9\u6570*/\r\n\t\tif (@yff_id  0)\r\n\t\tbegin\r\n\t\t  update zd_yp_windows_info \r\n\t\t  set total_order_count = total_order_count - \r\n\t\t\t(select COUNT(*) from \r\n\t\t\t(select distinct * from @tbl_order_count \r\n\t\t\t  where windows_no = b.windows_no) aa )\r\n\t\t  from zd_yp_windows_info a\r\n\t\t  inner join (select distinct windows_no from @tbl_order_count) b \r\n\t\t\t on a.windows_no = b.windows_no        \r\n\t\t  if @@ERROR  0 \r\n\t\t\tgoto rollbacktran        \r\n\t\tend\r\n    \r\n  commit tran\r\n  goto procend\r\n  \r\nrollbacktran:\r\n  if @@TRANCOUNT > 0 rollback tran\r\nprocend:\r\n;\r\n\r\ndrop table #tbl_mz_detail_charge_prep_drug_cancel\r\nset nocount off",
+2016-12-27 11:47:16 [AG2016] INFO:  '_timestamp': 1482810435.854279}
+2016-12-27 11:47:16 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 11:47:16 [AG2016] INFO: {'_eventPID': u'1018',
+2016-12-27 11:47:16 [AG2016] INFO:  '_hostname': u'XY-HISAPP27',
+2016-12-27 11:47:16 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(52);">52</a>',
+2016-12-27 11:47:16 [AG2016] INFO:  '_sql': u"(@P1 int)UPDATE mz_order_generator\r\n     SET max_sn =max_sn+@P1 \r\nwhere define='mz_receipt_sn'",
+2016-12-27 11:47:16 [AG2016] INFO:  '_timestamp': 1482810435.854279}
+2016-12-27 11:47:16 [AG2016] INFO: ^^^^^^^^^^^
+2016-12-27 11:47:16 [AG2016] INFO: {'_eventPID': u'1018',
+2016-12-27 11:47:16 [AG2016] INFO:  '_hostname': u'XY-HISAPP27',
+2016-12-27 11:47:16 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(52);">52</a>',
+2016-12-27 11:47:16 [AG2016] INFO:  '_sql': u"(@P1 int)UPDATE mz_order_generator\r\n     SET max_sn =max_sn+@P1 \r\nwhere define='mz_receipt_sn'",
+2016-12-27 11:47:16 [AG2016] INFO:  '_timestamp': 1482810435.854279}
+2016-12-27 11:47:16 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-27 11:47:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:47:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:47:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:02 [AG2016] INFO: 登陆守护星
+2016-12-27 11:48:02 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:48:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:07 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:15 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:48:15 [AG2016] INFO: {'_eventPID': u'1464',
+2016-12-27 11:48:15 [AG2016] INFO:  '_hostname': u'XY-SPDIS-APP-T',
+2016-12-27 11:48:15 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(3252);">3252</a>',
+2016-12-27 11:48:15 [AG2016] INFO:  '_sql': u"/*\u56fd\u836f\u8f6e\u8be2\u83b7\u53d6\u5f85\u6446\u836f\u6570\u636e*/\r\nCREATE proc [dbo].[usp_get_prep_drug]\r\n(@guid uniqueidentifier,\r\n @query_times int = 1--, /*1\u7b2c\u4e00\u6b21\u83b7\u53d6\uff0c2\u91cd\u590d\u67e5\u8be2*/  \r\n --@extend_param varchar(100) = null\r\n)\r\nas\r\n  set nocount on\r\n  begin try \r\n\t  insert into log_prep_drug_interface_exec\r\n\t   (\r\n\t\tinterface_name,\r\n\t\tinterface_desc,\r\n\t\tparam_str)\r\n\t  values\r\n\t  ('usp_get_prep_drug',\r\n\t   '\u83b7\u53d6\u5f85\u6446\u836f\u6570\u636e',\r\n\t   CONVERT(varchar(200), @guid) + '|' + CONVERT(varchar(10), @query_times)\r\n\t  )\r\n  end try\r\n  begin catch\r\n  end catch\r\n  set nocount off \r\n  \r\n  if @query_times not in (1, 2)\r\n  begin\r\n    declare @error_info varchar(300)\r\n    set @error_info = '\u6267\u884c\u5931\u8d25\uff0c\u539f\u56e0\uff1a\u51fa\u5165\u53c2\u6570[query_times:' + CONVERT(varchar(10), @query_times) + \r\n      ']\u9519\u8bef\uff1b\u53c2\u6570\u53ea\u80fd\u4e3a1\u6216\u80052'\r\n    raiserror(@error_info, 16, 1)\r\n    return\r\n  end\r\n  \r\n  set nocount on  \r\n \r\n  if @query_times = 2\r\n  begin\r\n\t  select mdc.sequence_id as SEQUENCE_ID,--\u552f\u4e00\u5e8f\u5217\u53f7    \r\n\t\t  mdc.send_no as PRESCRIPTION_ID, --\u53d1\u836f\u7f16\u53f7    \r\n\t\t  mdc.item_no as PRESCRIPTION_SEQNO, --\u836f\u54c1\u987a\u5e8f\u53f7    \r\n\t\t  convert(varchar(20), mdc.patient_id) + '_' +    \r\n\t\t  CONVERT(varchar(20), mdc.times) + '_' +    \r\n\t\t  convert(varchar(20), mdc.order_type) + '_' +    \r\n\t\t  convert(varchar(20), mdc.order_no) as PRESCRIPTION_NO, --\u5904\u65b9\u53f7    \r\n\t\t  d.name as PRESCRIPTION_NAME, --\u5904\u65b9\u540d\u79f0    \r\n\t\t  '' as PRESCRIPTION_DESC,--\u5904\u65b9\u63cf\u8ff0    \r\n\t\t  '' as PRESCRIPTION_CODE,--\u81ea\u5b9a\u4e49\u7f16\u7801    \r\n\t\t  mdc.order_type as PRESCRIPTION_TYPE, --\u5904\u65b9\u7c7b\u578b    \r\n\t\t  mdc.group_no as EXPORT_DEPT_CODE, --\u53d1\u836f\u836f\u623f\u7f16\u7801    \r\n\t\t  e.dept_name as EXPORT_DEPT_NAME, --\u836f\u623f\u540d\u79f0    \r\n\t\t  mdc.apply_unit as KD_DEPT_CODE, --\u5f00\u5355\u79d1\u5ba4\u7f16\u53f7    \r\n\t\t  c.name as KD_DEPT_NAME, --\u5f00\u5355\u79d1\u5ba4\u540d\u79f0    \r\n\t\t  mdc.group_no as DEPT_CODE, --\u6446\u836f\u79d1\u5ba4    \r\n\t\t  e.dept_name as DEPT_NAME, --\u6446\u836f\u79d1\u5ba4\u540d\u79f0    \r\n\t\t  mdc.doctor_code as DOCTOR_CODE, --\u533b\u751f\u7f16\u53f7\uff08\u533b\u9662\u7684\u533b\u751f\u7f16\u53f7\u662f5\u4f4d\uff09    \r\n\t\t  f.name as DOCTOR_NAME, --\u533b\u751f\u59d3\u540d    \r\n\t\t  mdc.patient_id as PATIENT_ID, --\u60a3\u8005ID    \r\n\t\t  mdc.name as PATIENT_NAME, --\u60a3\u8005\u59d3\u540d    \r\n\t\t  b.name as ENGLISH_NAME, --\u59d3\u540d\u62fc\u97f3    \r\n\t\t  CONVERT(varchar(30),b.birthday , 120)as BIRTHDAY,--20140328 zhangqiang \u56fd\u836f\u53d6\u6570\u7528  \r\n\t\t  --b.birthday as BIRTHDAY, --\u51fa\u751f\u5e74\u6708    \r\n\t\t  b.sex as SEX, --\u6027\u522b;1\uff1a\u7537\uff1b2\uff1a\u5973\uff1b9\uff1a\u4e0d\u660e    \r\n\t\t  CONVERT(varchar(30),mdc.happen_date, 120)as PRESCRIPTION_DATE,--20140328 zhangqiang \u56fd\u836f\u53d6\u6570\u7528  \r\n\t\t  --mdc.happen_date as PRESCRIPTION_DATE, --\u5904\u65b9\u65e5\u671f    \r\n\t\t  convert(varchar(10), mdc.windows_no) as WICKET, --\u53d6\u836f\u7a97\u53e3\u53f7    \r\n\t\t  '' as INSTRUCTION, --\u5631\u5490    \r\n\t\t  mdc.times as TIMES, --\u5c31\u8bca\u6b21\u6570    \r\n\t\t  mvt.first_flag as DIAGZ_TYPE, --\u7c7b\u578b(\u521d\uff0c\u590d\uff0c\u6700\u540e\u8bca\u65ad) \uff08\u4e0ehis\u7684\u5904\u65b9\u4e00\u81f4\uff0c\u786e\u8ba4\u662f\u5426\u5b58\u5728\u8be5\u5b57\u6bb5\uff09    \r\n\t\t  mdc.charge_code as HOS_DRUG_CODE, --\u836f\u54c1\u7f16\u53f7    \r\n\t\t  ydt.drugname as HOS_DRUG_NAME, --\u836f\u54c1\u540d\u79f0    \r\n\t\t  ypunt.name as PACKAGE_UNITS, --\u836f\u54c1\u5355\u4f4d\uff1a\u836f\u54c1\u5305\u88c5\u5355\u4f4d    \r\n\t\t  ydt.specification as PACKAGE_SPEC, --\u836f\u54c1\u89c4\u683c\uff1a\u836f\u54c1\u5305\u88c5\u89c4\u683c    \r\n\t\t  ypm.manu_code as MANUFACT_CODE, --\u751f\u4ea7\u5382\u5bb6\u7f16\u7801    \r\n\t\t  ypm.manu_name as MANUFACT_NAME, --\u751f\u4ea7\u5382\u5bb6\u540d\u79f0      \r\n\t\t  '' as PRESCRIPTION_PYCODE, --\u62fc\u97f3\u7801    \r\n\t\t  mdc.charge_amount as DRUG_COUNT, --\u836f\u54c1\u6570\u91cf    \r\n\t\t  yzs.supply_name as ADMINISTRATION_DESC, --\u7528\u836f\u9014\u5f84  \r\n\t\t  '02110002' as HOSPITAL_CODE,--\u5b9a\u70b9\u533b\u7597\u673a\u6784\u4ee3\u7801\r\n\t\t  mdz.diag as CLINIC_DIAGNOSIS,--\u4e34\u5e8a\u8bca\u65ad\r\n\t\t \r\n\t\t  cast((mdc.charge_amount*mdc.charge_price*mdc.caoyao_fu) as varchar(25)) + '\u5143' as FEE_AMOUNT,--\u836f\u8d39\u5185\u5bb9\r\n\t\t  (isnull(yf.name,'') + ' ' + isnull(cast(mdc.dosage as varchar(10)),'')+ isnull(yu.name,'') + ' ' + isnull(yzs.supply_name,'')) as EXPLANATION,--\u7528\u6cd5\u5185\u5bb9\r\n\t\t  zcg.name as DRUG_TYPE,--\u836f\u54c1\u7c7b\u578b  \r\n\t\t  case when mdc.ledger_sn > 0 then '0'   \r\n\t\t  when mdc.ledger_sn  0 then '0'  \r\n\t\t  when mdc.yff_id = 2.0 then 1 else 0 end as PRE_PAY_FLAG --\u9884\u4ed8\u8d39\u6807\u5fd7       \r\n\t  from mz_detail_charge_prep_drug mdc (nolock)    \r\n\t\t  inner join mz_visit_table mvt (nolock) on mdc.patient_id = mvt.patient_id and mdc.times = mvt.times   \r\n\t\t  --inner join mz_123801 mz (nolock) on mdc.patient_id=mz.patient_id and mdc.times=mz.times \r\n\t\t  inner join yp_dict ydt (nolock) on mdc.charge_code = ydt.charge_code and mdc.serial_no = ydt.serial    \r\n\t\t  inner join mz_patient_mi b (nolock) on mdc.patient_id = b.patient_id    \r\n\t\t  inner join zd_unit_code c (nolock) on mdc.apply_unit = c.unit_sn    \r\n\t\t  inner join mz_zd_order_type d (nolock) on mdc.order_type = d.code    \r\n\t\t  inner join yp_group_name e (nolock) on mdc.group_no = e.group_no    \r\n\t\t  inner join a_employee_mi f (nolock) on mdc.doctor_code = f.emp_sn \r\n\t\t     \r\n\t\t  left join yp_unit ypunt (nolock) on ydt.pack_unit = ypunt.code    \r\n\t\t  left join yp_unit yu (nolock) on mdc.dosage_unit = yu.code   \r\n\t\t  left join yz_frequency yf (nolock) on mdc.freq_code=yf.code\r\n\t\t  left join yp_manufacture ypm (nolock) on ydt.manufactory = ypm.manu_code    \r\n\t\t  left join yz_supply yzs (nolock) on mdc.supply_code = yzs.supply_code    \r\n\t\t  left join zd_charge_group zcg (nolock) on ydt.mz_charge_group=zcg.code\r\n\t\t  left join mz_diag_zh mdz (nolock) on mdz.patient_id=mdc.patient_id and mdz.times=mdc.times\r\n\t  where guid1 = @guid\r\n      /*\r\n      group by mdc.sequence_id,mdc.send_no,mdc.item_no,mdc.patient_id,mdc.times,mdc.order_no,mdc.order_type,\r\n      d.name,mdc.group_no,e.dept_name,mdc.apply_unit,c.name,f.name,mdc.doctor_code,mdc.name,b.name,b.birthday,\r\n      b.sex,mdc.happen_date,mdc.windows_no,mvt.first_flag,mdc.charge_code,ydt.drugname,ypunt.name,ydt.specification,\r\n      ypm.manu_code,ypm.manu_name,mdc.charge_amount,yzs.supply_name,mz.diagnosis,zcg.name,mdc.ledger_sn,mdc.yff_id,\r\n      mdc.price_data,mdc.buy_price,yf.name,mdc.dosage,yu.name*/\r\n  end\r\n  else begin  /*\u7b2c\u4e00\u6b21\u67e5\u8be2*/\r\n      begin tran  \r\n\t\t  update mz_detail_charge_prep_drug     \r\n\t\t  set guid1 = @guid,    \r\n\t\t\t\tguid1_date = GETDATE()    \r\n\t\t  output    \r\n\t\t\tinserted.sequence_id as SEQUENCE_ID,--\u552f\u4e00\u5e8f\u5217\u53f7    \r\n\t\t\tinserted.send_no as PRESCRIPTION_ID, --\u53d1\u836f\u7f16\u53f7    \r\n\t\t\tinserted.item_no as PRESCRIPTION_SEQNO, --\u836f\u54c1\u987a\u5e8f\u53f7    \r\n\t\t\tconvert(varchar(20), inserted.patient_id) + '_' +    \r\n\t\t\tconvert(varchar(20), inserted.times) + '_' +    \r\n\t\t\tconvert(varchar(20), inserted.order_type) + '_' +    \r\n\t\t\tconvert(varchar(20), inserted.order_no) as PRESCRIPTION_NO, --\u5904\u65b9\u53f7    \r\n\t\t\td.name as PRESCRIPTION_NAME, --\u5904\u65b9\u540d\u79f0    \r\n\t\t\t'' as PRESCRIPTION_DESC,--\u5904\u65b9\u63cf\u8ff0    \r\n\t\t\t'' as PRESCRIPTION_CODE,--\u81ea\u5b9a\u4e49\u7f16\u7801    \r\n\t\t\tinserted.order_type as PRESCRIPTION_TYPE, --\u5904\u65b9\u7c7b\u578b    \r\n\t\t\tinserted.group_no as EXPORT_DEPT_CODE, --\u53d1\u836f\u836f\u623f\u7f16\u7801    \r\n\t\t\te.dept_name as EXPORT_DEPT_NAME, --\u836f\u623f\u540d\u79f0    \r\n\t\t\tinserted.apply_unit as KD_DEPT_CODE, --\u5f00\u5355\u79d1\u5ba4\u7f16\u53f7    \r\n\t\t\tc.name as KD_DEPT_NAME, --\u5f00\u5355\u79d1\u5ba4\u540d\u79f0    \r\n\t\t\tinserted.group_no as DEPT_CODE, --\u6446\u836f\u79d1\u5ba4    \r\n\t\t\te.dept_name as DEPT_NAME, --\u6446\u836f\u79d1\u5ba4\u540d\u79f0    \r\n\t\t\tinserted.doctor_code as DOCTOR_CODE, --\u533b\u751f\u7f16\u53f7\uff08\u533b\u9662\u7684\u533b\u751f\u7f16\u53f7\u662f5\u4f4d\uff09    \r\n\t\t\tf.name as DOCTOR_NAME, --\u533b\u751f\u59d3\u540d    \r\n\t\t\tinserted.patient_id as PATIENT_ID, --\u60a3\u8005ID    \r\n\t\t\tinserted.name as PATIENT_NAME, --\u60a3\u8005\u59d3\u540d    \r\n\t\t\tb.name as ENGLISH_NAME, --\u59d3\u540d\u62fc\u97f3    \r\n\t\t\tCONVERT(varchar(30),b.birthday , 120)as BIRTHDAY,--20140328 zhangqiang \u56fd\u836f\u53d6\u6570\u7528  \r\n\t\t\t--b.birthday as BIRTHDAY, --\u51fa\u751f\u5e74\u6708    \r\n\t\t\tb.sex as SEX, --\u6027\u522b;1\uff1a\u7537\uff1b2\uff1a\u5973\uff1b9\uff1a\u4e0d\u660e    \r\n\t\t\tCONVERT(varchar(30),inserted.happen_date, 120)as PRESCRIPTION_DATE,--20140328 zhangqiang \u56fd\u836f\u53d6\u6570\u7528  \r\n\t\t\t--inserted.happen_date as PRESCRIPTION_DATE, --\u5904\u65b9\u65e5\u671f    \r\n\t\t\tconvert(varchar(10), inserted.windows_no) as WICKET, --\u53d6\u836f\u7a97\u53e3\u53f7    \r\n\t\t\t'' as INSTRUCTION, --\u5631\u5490    \r\n\t\t\tinserted.times as TIMES, --\u5c31\u8bca\u6b21\u6570    \r\n\t\t\tmvt.first_flag as DIAGZ_TYPE, --\u7c7b\u578b(\u521d\uff0c\u590d\uff0c\u6700\u540e\u8bca\u65ad) \uff08\u4e0ehis\u7684\u5904\u65b9\u4e00\u81f4\uff0c\u786e\u8ba4\u662f\u5426\u5b58\u5728\u8be5\u5b57\u6bb5\uff09    \r\n\t\t\tinserted.charge_code as HOS_DRUG_CODE, --\u836f\u54c1\u7f16\u53f7    \r\n\t\t\tydt.drugname as HOS_DRUG_NAME, --\u836f\u54c1\u540d\u79f0    \r\n\t\t\typunt.name as PACKAGE_UNITS, --\u836f\u54c1\u5355\u4f4d\uff1a\u836f\u54c1\u5305\u88c5\u5355\u4f4d    \r\n\t\t\tydt.specification as PACKAGE_SPEC, --\u836f\u54c1\u89c4\u683c\uff1a\u836f\u54c1\u5305\u88c5\u89c4\u683c    \r\n\t\t\typm.manu_code as MANUFACT_CODE, --\u751f\u4ea7\u5382\u5bb6\u7f16\u7801    \r\n\t\t\typm.manu_name as MANUFACT_NAME, --\u751f\u4ea7\u5382\u5bb6\u540d\u79f0      \r\n\t\t\t'' as PRESCRIPTION_PYCODE, --\u62fc\u97f3\u7801    \r\n\t\t\tinserted.charge_amount as DRUG_COUNT, --\u836f\u54c1\u6570\u91cf    \r\n\t\t\tyzs.supply_name as ADMINISTRATION_DESC, --\u7528\u836f\u9014\u5f84 \r\n\t\t\t'02110002' as HOSPITAL_CODE,--\u5b9a\u70b9\u533b\u7597\u673a\u6784\u4ee3\u7801\r\n\t\t\tmdz.diag as CLINIC_DIAGNOSIS,--\u4e34\u5e8a\u8bca\u65ad\r\n\t\t    cast((inserted.charge_amount*inserted.charge_price*inserted.caoyao_fu) as varchar(25)) + '\u5143' as FEE_AMOUNT,--\u836f\u8d39\u5185\u5bb9\r\n\t\t    isnull(yf.name,'') + ' ' + isnull(cast(inserted.dosage as varchar(10)),'')+ isnull(yu.name,'') + ' ' + isnull(yzs.supply_name,'') as EXPLANATION,--\u7528\u6cd5\u5185\u5bb9\r\n\t\t\tzcg.name as DRUG_TYPE,--\u836f\u54c1\u7c7b\u578b   \t\t\t\r\n\t\t\tcase when inserted.ledger_sn > 0 then '0'   \r\n\t\t\twhen inserted.ledger_sn  0 then '0'  \r\n\t\t\twhen inserted.yff_id = 2.0 then 1 else 0 end as PRE_PAY_FLAG --\u9884\u4ed8\u8d39\u6807\u5fd7        \r\n\t\t  from mz_detail_charge_prep_drug mdc (nolock)    \r\n\t\t\t  inner join mz_visit_table mvt (nolock) on mdc.patient_id = mvt.patient_id and mdc.times = mvt.times   \r\n\t\t\t  inner join yp_dict ydt (nolock) on mdc.charge_code = ydt.charge_code and mdc.serial_no = ydt.serial    \r\n\t\t\t  inner join mz_patient_mi b (nolock) on mdc.patient_id = b.patient_id    \r\n\t\t\t  inner join zd_unit_code c (nolock) on mdc.apply_unit = c.unit_sn    \r\n\t\t\t  inner join mz_zd_order_type d (nolock) on mdc.order_type = d.code    \r\n\t\t\t  inner join yp_group_name e (nolock) on mdc.group_no = e.group_no    \r\n\t\t\t  inner join a_employee_mi f (nolock) on mdc.doctor_code = f.emp_sn    \r\n\t\t\t  left join yp_unit ypunt (nolock) on ydt.pack_unit = ypunt.code  \r\n\t\t\t  left join yp_unit yu (nolock) on mdc.dosage_unit = yu.code   \r\n\t\t\t  left join yz_frequency yf (nolock) on mdc.freq_code=yf.code\r\n\t\t\t  left join yp_manufacture ypm (nolock) on ydt.manufactory = ypm.manu_code    \r\n\t\t\t  left join yz_supply yzs (nolock) on mdc.supply_code = yzs.supply_code    \r\n\t\t\t  left join zd_charge_group zcg (nolock) on ydt.mz_charge_group=zcg.code\r\n\t\t\t  --left join mz_123801 mz (nolock) on mdc.patient_id=mz.patient_id and mdc.times=mz.times \r\n\t\t\t  left join mz_diag_zh mdz (nolock) on mdz.patient_id=mdc.patient_id and mdz.times=mdz.times\r\n\t\t  where   \r\n\t\t\t mdc.guid1 is null   \r\n\t\t\t and mdc.data_insert_date >= convert(varchar(10), GETDATE())  \t\t\r\n\t\t\t and (\r\n\t\t\t\t   (\r\n\t\t\t\t\t (mdc.ledger_sn > 0 or mdc.yff_id > 0)       \r\n\t\t\t\t\t and not exists  \r\n\t\t\t\t\t (select 1 from mz_detail_charge_prep_drug vb  (nolock)   \r\n\t\t\t\t\t   where mdc.patient_id = vb.patient_id and mdc.order_type = vb.order_type    \r\n\t\t\t\t\t   and mdc.order_no = vb.order_no and mdc.item_no = vb.item_no  \r\n\t\t\t\t\t   and mdc.times = vb.times   \r\n\t\t\t\t\t   and (\r\n\t\t\t\t\t\t (mdc.send_no = vb.send_no) and (vb.ledger_sn  0 or vb.yff_id > 0))\r\n\t\t\t\t\r\n\t\t\t\t\t )\r\n\t\t\t\t\t   \r\n\t\t\t\t  )\r\n\t\t\t\t  \r\n\t\t\t   )                \r\n\t\t\t         \r\n   \r\n\t\t if @@ERROR  0  \r\n\t\t   goto rollbacktran\r\n\t   \r\n\t commit tran          \r\n  end\r\n  \r\n  goto procend  \r\n    \r\nrollbacktran:  \r\n  if @@TRANCOUNT > 0 rollback tran  \r\nprocend:  \r\n;       \r\nset nocount off",
+2016-12-27 11:48:15 [AG2016] INFO:  '_timestamp': 1482810495.262007}
+2016-12-27 11:48:15 [AG2016] INFO: ^^^^^^^^^^^
+2016-12-27 11:48:15 [AG2016] INFO: <class 'spider.items.AngleGuardItem'>
+2016-12-27 11:48:15 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:48:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:48:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:48:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:29 [AG2016] INFO: 登陆守护星
+2016-12-27 11:59:29 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:59:30 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:32 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:34 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:34 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:35 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:35 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 11:59:35 [AG2016] INFO: {'_eventPID': u'5303',
+2016-12-27 11:59:35 [AG2016] INFO:  '_hostname': u'XY-HISAPP28',
+2016-12-27 11:59:35 [AG2016] INFO:  '_resultPID': u'<a href="javascript:showToLockInfo(936);">936</a>',
+2016-12-27 11:59:35 [AG2016] INFO:  '_sql': u"(@P1 int)UPDATE mz_order_generator\r\n     SET max_sn =max_sn+@P1 \r\nwhere define='mz_receipt_sn'",
+2016-12-27 11:59:35 [AG2016] INFO:  '_timestamp': 1482811174.82867}
+2016-12-27 11:59:35 [AG2016] INFO: *****************
+2016-12-27 11:59:35 [AG2016] INFO: 1482811174.83
+2016-12-27 11:59:35 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 11:59:35 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:37 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:37 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:37 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:37 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:38 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:38 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:39 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:39 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:40 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:40 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:57 [AG2016] INFO: 登陆守护星
+2016-12-27 11:59:57 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 11:59:58 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 11:59:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 11:59:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:00 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:00 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:07 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:21 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:24 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:25 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:25 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:26 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:30 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:32 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:33 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:34 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:35 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:35 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:36 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:37 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:37 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:38 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:38 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:39 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:39 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:39 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:39 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:40 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:00:41 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:00:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:50 [AG2016] INFO: 登陆守护星
+2016-12-27 12:09:51 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 12:09:52 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:52 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:53 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:54 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:54 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:55 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:56 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:57 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:57 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:58 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:09:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:09:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:00 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:07 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:21 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:24 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:25 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:26 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:26 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 12:10:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 12:10:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:10 [AG2016] INFO: 登陆守护星
+2016-12-27 13:00:10 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 13:00:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:21 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:21 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:24 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:25 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:26 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 13:00:26 [AG2016] INFO: {'_eventPID': u'1001',
+2016-12-27 13:00:26 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 13:00:26 [AG2016] INFO:  '_resultPID': u'0',
+2016-12-27 13:00:26 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='2' and exam_code ='0007') or (exam_flag ='9' and exam_code ='CT\u5e73\u626b') or (exam_flag ='0' and exam_code ='000033') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 13:00:26 [AG2016] INFO:  '_timestamp': 1482814825.169148}
+2016-12-27 13:00:26 [AG2016] INFO: *****************
+2016-12-27 13:00:26 [AG2016] INFO: <type 'float'>
+2016-12-27 13:00:26 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 13:00:26 [AG2016] INFO: {'_eventPID': u'1087',
+2016-12-27 13:00:26 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 13:00:26 [AG2016] INFO:  '_resultPID': u'0',
+2016-12-27 13:00:26 [AG2016] INFO:  '_sql': u"(@P0 bigint)select yyorderdet0_.order_sn as order1_53_, yyorderdet0_.yyh_sn as yyh2_53_, yyorderdet0_.exam_serial as exam3_53_, yyorderdet0_.order_status as order4_53_, yyorderdet0_.patient_id as patient5_53_, yyorderdet0_.mz_zy_flag as mz6_53_, yyorderdet0_.opper_code as opper7_53_, yyorderdet0_.opper_dept as opper8_53_, yyorderdet0_.opper_date as opper9_53_, yyorderdet0_.print_flag as print10_53_, yyorderdet0_.print_sn as print11_53_, yyorderdet0_.print_time as print12_53_, yyorderdet0_.close_flag as close13_53_, yyorderdet0_.channel_type as channel14_53_, yyorderdet0_.exam_flag as exam15_53_, yyorderdet0_.yz_act_order_no as yz16_53_, yyorderdet0_.exam_type as exam17_53_, yyorderdet0_.exam_sub_type as exam18_53_, yyorderdet0_.check_flag as check19_53_, yyorderdet0_.picture_name as picture20_53_, yyorderdet0_.ris_print_flag as ris21_53_ from yy_order_detl yyorderdet0_ where isnull(yyorderdet0_.exam_serial, 0)=@P0 and yyorderdet0_.close_flag='0' and (yyorderdet0_.order_status in ('1' , '2'))",
+2016-12-27 13:00:26 [AG2016] INFO:  '_timestamp': 1482814825.169148}
+2016-12-27 13:00:26 [AG2016] INFO: *****************
+2016-12-27 13:00:26 [AG2016] INFO: <type 'float'>
+2016-12-27 13:00:26 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-27 13:00:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:26 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 13:00:26 [AG2016] INFO: {'_eventPID': u'1001',
+2016-12-27 13:00:26 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 13:00:26 [AG2016] INFO:  '_resultPID': u'0',
+2016-12-27 13:00:26 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='2' and exam_code ='0007') or (exam_flag ='9' and exam_code ='CT\u5e73\u626b') or (exam_flag ='0' and exam_code ='000033') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 13:00:26 [AG2016] INFO:  '_timestamp': 1482814826.09893}
+2016-12-27 13:00:26 [AG2016] INFO: *****************
+2016-12-27 13:00:26 [AG2016] INFO: <type 'float'>
+2016-12-27 13:00:26 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-27 13:00:26 [AG2016] INFO: {'_eventPID': u'1001',
+2016-12-27 13:00:26 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 13:00:26 [AG2016] INFO:  '_resultPID': u'1087',
+2016-12-27 13:00:26 [AG2016] INFO:  '_sql': u"(@P0 nvarchar(4000),@P1 nvarchar(4000),@P2 nvarchar(4000),@P3 nvarchar(4000),@P4 nvarchar(4000),@P5 nvarchar(4000),@P6 nvarchar(4000))\n\t\t\t \t\n\t\t\tSELECT a.*, ylt.node_text AS itemName, --\u8d44\u6e90\u540d\u79f0\n\t\t\t(case a.exam_flag\n\t\t\t\twhen '-2' \n\t\t\t\tthen (SELECT top 1 jzi.name FROM jy_zd_item jzi WHERE jzi.code=a.exam_code)\n\t\t\t\twhen '-1' \n\t\t\t\tthen (SELECT TOP 1 jzc.name FROM jy_zd_class jzc WHERE jzc.code=a.exam_code)\n\t\t\t\twhen '0'\n\t\t\t\tthen (SELECT top 1 jzest.name FROM jc_zd_exam_sub_type jzest WHERE jzest.sub_code = a.exam_code and jzest.type_code=@P0)\n\t\t\t\twhen '1'\n\t\t\t\tthen (SELECT jzet.name FROM jc_zd_exam_type jzet WHERE jzet.code = a.exam_code)\n\t\t\t\twhen '2'\n\t\t\t\tthen (SELECT jzer.name FROM jc_zd_exam_region jzer WHERE jzer.code = a.exam_code) \n\t\t\t\twhen '3'\n\t\t\t\tthen (SELECT zuc.name FROM zd_unit_code zuc WHERE zuc.code = a.exam_code)\n\t\t\t\twhen '5'\n\t\t\t\tthen (SELECT yb.name FROM yy_branch yb WHERE yb.branch_id = a.exam_code)\n\t\t\t\twhen '9'\n\t\t\t\tthen a.exam_code\n\t\t\t\tELSE ''\n\t\t\t\tend) as partName --\u9879\u76ee\u6811\u8282\u70b9\u7684\u540d\u79f0\n\t\t\tFROM (\n\t\t\t\tSELECT ypv.yyh_sn, ypv.detl_sn, CONVERT(VARCHAR(10), ypv.yyh_date, 120) AS yyh_date, ypv.channel,\n\t\t\t\typv.am_pm, ypv.begin_time, ypv.end_time, ypv.sort_sn, ypv.add_flag, ypv.[status], ypv.node_id, ypv.exam_flag, ypv.exam_code, \n\t\t\t\typv.effect_e, ypv.effect_b\n\t\t\t\tFROM yy_parts_valid ypv\n\t\t\t\tWHERE ypv.node_id = @P1\n\t\t\t\tAND ypv.yyh_date = @P2\n\t\t\t\tAND ypv.effect_b = @P4\n\t\t\t\tAND ypv.open_flag = '1' --\u5f00\u653e\n\t\t\t\tAND ypv.am_pm LIKE @P5\n\t\t\t\tAND (ypv.dept_sn  = @P6 or isnull(ypv.dept_sn,'')='')) AS a\n\t\t\tleft JOIN yy_logic_tree ylt ON ylt.node_id = a.node_id\n\t\t\tWHERE 1=1\t\n\t\t\t \n\t\t\tand ( (exam_flag ='2' and exam_code ='0007') or (exam_flag ='9' and exam_code ='CT\u5e73\u626b') or (exam_flag ='0' and exam_code ='000033') or (exam_flag is null or exam_flag ='')) order by ylt.node_id, CASE a.am_pm WHEN 'AM' THEN '1' WHEN 'PM' THEN '2'  WHEN 'AP' THEN '3'  END, a.sort_sn",
+2016-12-27 13:00:26 [AG2016] INFO:  '_timestamp': 1482814826.09893}
+2016-12-27 13:00:26 [AG2016] INFO: *****************
+2016-12-27 13:00:26 [AG2016] INFO: <type 'float'>
+2016-12-27 13:00:26 [AG2016] WARNING: 爬取到数据库阻塞事件3:
+2016-12-27 13:00:26 [AG2016] INFO: {'_eventPID': u'1087',
+2016-12-27 13:00:26 [AG2016] INFO:  '_hostname': u'XY-YYZX-WEBAPP',
+2016-12-27 13:00:26 [AG2016] INFO:  '_resultPID': u'0',
+2016-12-27 13:00:26 [AG2016] INFO:  '_sql': u"(@P0 bigint)select yyorderdet0_.order_sn as order1_53_, yyorderdet0_.yyh_sn as yyh2_53_, yyorderdet0_.exam_serial as exam3_53_, yyorderdet0_.order_status as order4_53_, yyorderdet0_.patient_id as patient5_53_, yyorderdet0_.mz_zy_flag as mz6_53_, yyorderdet0_.opper_code as opper7_53_, yyorderdet0_.opper_dept as opper8_53_, yyorderdet0_.opper_date as opper9_53_, yyorderdet0_.print_flag as print10_53_, yyorderdet0_.print_sn as print11_53_, yyorderdet0_.print_time as print12_53_, yyorderdet0_.close_flag as close13_53_, yyorderdet0_.channel_type as channel14_53_, yyorderdet0_.exam_flag as exam15_53_, yyorderdet0_.yz_act_order_no as yz16_53_, yyorderdet0_.exam_type as exam17_53_, yyorderdet0_.exam_sub_type as exam18_53_, yyorderdet0_.check_flag as check19_53_, yyorderdet0_.picture_name as picture20_53_, yyorderdet0_.ris_print_flag as ris21_53_ from yy_order_detl yyorderdet0_ where isnull(yyorderdet0_.exam_serial, 0)=@P0 and yyorderdet0_.close_flag='0' and (yyorderdet0_.order_status in ('1' , '2'))",
+2016-12-27 13:00:26 [AG2016] INFO:  '_timestamp': 1482814826.09893}
+2016-12-27 13:00:26 [AG2016] INFO: *****************
+2016-12-27 13:00:26 [AG2016] INFO: <type 'float'>
+2016-12-27 13:00:26 [AG2016] WARNING: 爬取到数据库阻塞事件4:
+2016-12-27 13:00:26 [AG2016] INFO: {'_eventPID': u'1253',
+2016-12-27 13:00:26 [AG2016] INFO:  '_hostname': u'MZSRV',
+2016-12-27 13:00:26 [AG2016] INFO:  '_resultPID': u'1001',
+2016-12-27 13:00:26 [AG2016] INFO:  '_sql': u"update yy_parts_valid set channel='50;51;52'\r\nfrom yy_parts_valid where node_id in ('76','77','226')\r\nand DATEDIFF(minute,CONVERT(char(5),GETDATE(),108),begin_time)=0\r\nand CONVERT(char(10),yyh_date,121)=CONVERT(char(10),GETDATE(),121)",
+2016-12-27 13:00:26 [AG2016] INFO:  '_timestamp': 1482814826.09893}
+2016-12-27 13:00:26 [AG2016] INFO: *****************
+2016-12-27 13:00:26 [AG2016] INFO: <type 'float'>
+2016-12-27 13:00:26 [AG2016] INFO: 已完成本次爬取.总共爬取到4个阻塞事件.
+2016-12-27 13:00:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:00:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:00:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:50 [AG2016] INFO: 登陆守护星
+2016-12-27 13:07:51 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-27 13:07:52 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:52 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:53 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:53 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:54 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:54 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:55 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:55 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:56 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:57 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:57 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:58 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:58 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:07:59 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:07:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:00 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:01 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:02 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:03 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:04 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:05 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:06 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:07 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:07 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:08 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:09 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:10 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:11 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:11 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:12 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:13 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:14 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:15 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:15 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:16 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:16 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:17 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:17 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:18 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:18 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:19 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:19 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:20 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:21 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:21 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:21 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:22 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:22 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:23 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:24 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:25 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:25 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:26 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:26 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:27 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:28 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:29 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 13:08:29 [AG2016] INFO: {'_eventPID': u'5620',
+2016-12-27 13:08:29 [AG2016] INFO:  '_hostname': u'XY-HISAPP27',
+2016-12-27 13:08:29 [AG2016] INFO:  '_resultPID': u'0',
+2016-12-27 13:08:29 [AG2016] INFO:  '_sql': u'(@P1 int,@P2 int,@P3 int,@P4 image)INSERT INTO "chisdb_bjrm_mz".."interface_ie_mz_log_params" ("log_id","param_index","param_type","param_content") VALUES (@P1,@P2,@P3,@P4)',
+2016-12-27 13:08:29 [AG2016] INFO:  '_timestamp': 1482815308.183582}
+2016-12-27 13:08:29 [AG2016] INFO: *****************
+2016-12-27 13:08:29 [AG2016] INFO: <type 'unicode'>
+2016-12-27 13:08:29 [AG2016] INFO: ###################
+2016-12-27 13:08:29 [AG2016] INFO: ###################
+2016-12-27 13:08:29 [AG2016] INFO: 事件已保存进数据库
+2016-12-27 13:08:29 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 13:08:29 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:29 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-27 13:08:29 [AG2016] INFO: {'_eventPID': u'3484',
+2016-12-27 13:08:29 [AG2016] INFO:  '_hostname': u'XY-HISAPP04',
+2016-12-27 13:08:29 [AG2016] INFO:  '_resultPID': u'2310',
+2016-12-27 13:08:29 [AG2016] INFO:  '_sql': u"select 1 from zd_yp_windows_yp_group a where group_no = '71' and delete_flag = '0'and baiyao_flag = '1'  and exists(select 1 from zd_yp_windows_info b where a.windows_no = b.windows_no  and b.delete_flag = '0'  and b.open_flag = '1')",
+2016-12-27 13:08:29 [AG2016] INFO:  '_timestamp': 1482815309.221123}
+2016-12-27 13:08:29 [AG2016] INFO: *****************
+2016-12-27 13:08:29 [AG2016] INFO: <type 'unicode'>
+2016-12-27 13:08:29 [AG2016] INFO: ###################
+2016-12-27 13:08:29 [AG2016] INFO: ###################
+2016-12-27 13:08:29 [AG2016] INFO: 事件已保存进数据库
+2016-12-27 13:08:29 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-27 13:08:30 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-27 13:08:31 [AG2016] INFO: 开始本次爬取
+2016-12-27 13:08:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:22 [AG2016] INFO: 登陆守护星
+2016-12-28 13:48:23 [AG2016] INFO: 访问实时阻塞事件页面
+2016-12-28 13:48:23 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:24 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:24 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:24 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:25 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:25 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:48:25 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:48:26 [AG2016] INFO: 事件:1283已保存进数据库
+2016-12-28 13:48:26 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:26 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:27 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:27 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:27 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:28 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:28 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:28 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:29 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:29 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:30 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:30 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:31 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:31 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:32 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:32 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:33 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:33 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:33 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:34 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:34 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:34 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:35 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:35 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:35 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:36 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:36 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:36 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:37 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:37 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:38 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:38 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:38 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:39 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:39 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:40 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:40 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:41 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:41 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:42 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:42 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:42 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:42 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:43 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:43 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:43 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:43 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:44 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:44 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:45 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:45 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:46 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:46 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:46 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:46 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:47 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:47 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:48:47 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:48:49 [AG2016] INFO: 事件:6199已保存进数据库
+2016-12-28 13:48:49 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:49 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:50 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:50 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:51 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:51 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:48:51 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:48:52 [AG2016] INFO: 事件:4618已保存进数据库
+2016-12-28 13:48:52 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:52 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:53 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:53 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:53 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:54 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:54 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:54 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:55 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:55 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:55 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:56 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:56 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:56 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:57 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:57 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:58 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:58 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:58 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:59 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:48:59 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:48:59 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:00 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:00 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:01 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:01 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:01 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:02 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:02 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:02 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:03 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:03 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:03 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:04 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:04 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:04 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:05 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:05 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:05 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:06 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:06 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:06 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:07 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:07 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:08 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:08 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:08 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:09 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:09 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:09 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:10 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:10 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:10 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:10 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:10 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:49:11 [AG2016] INFO: 事件:9377已保存进数据库
+2016-12-28 13:49:12 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:12 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:12 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:13 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:13 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:13 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:14 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:14 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:14 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:15 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:15 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:15 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:49:17 [AG2016] INFO: 事件:6440已保存进数据库
+2016-12-28 13:49:17 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:17 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:17 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:49:17 [AG2016] INFO: 事件:7548已保存进数据库
+2016-12-28 13:49:17 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:17 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:17 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-28 13:49:17 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-28 13:49:19 [AG2016] INFO: 事件:1269已保存进数据库
+2016-12-28 13:49:20 [AG2016] INFO: 事件:6608已保存进数据库
+2016-12-28 13:49:20 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:20 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:21 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:21 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:21 [AG2016] WARNING: 爬取到数据库阻塞事件2:
+2016-12-28 13:49:21 [AG2016] INFO: 已完成本次爬取.总共爬取到2个阻塞事件.
+2016-12-28 13:49:21 [AG2016] INFO: 事件:2541已保存进数据库
+2016-12-28 13:49:23 [AG2016] INFO: 事件:8481已保存进数据库
+2016-12-28 13:49:23 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:23 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:24 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:24 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:24 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:25 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:25 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:25 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:26 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:26 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:26 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:49:27 [AG2016] INFO: 事件:6952已保存进数据库
+2016-12-28 13:49:28 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:28 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:28 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:29 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:29 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:29 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:30 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:30 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:31 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:31 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:31 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:32 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:32 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:32 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
+2016-12-28 13:49:33 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:33 [AG2016] WARNING: 爬取到数据库阻塞事件1:
+2016-12-28 13:49:33 [AG2016] INFO: 已完成本次爬取.总共爬取到1个阻塞事件.
+2016-12-28 13:49:34 [AG2016] INFO: 事件:7800已保存进数据库
+2016-12-28 13:49:34 [AG2016] INFO: 开始本次爬取
+2016-12-28 13:49:34 [AG2016] INFO: 已完成本次爬取.无阻塞事件.
